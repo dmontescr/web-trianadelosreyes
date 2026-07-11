@@ -1,4 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // --- INICIALIZACIÓN DE SUPABASE ---
+  const supabaseUrl = 'https://kfuppexuvrxfyqbeslnu.supabase.co';
+  const supabaseKey = 'sb_publishable_Ai2rFKZnWnbzYLAuvHKllQ_WgFBZJDM';
+  let supabase = null;
+  if (window.supabase) {
+    supabase = window.supabase.createClient(supabaseUrl, supabaseKey);
+  }
+
   // --- MENU RESPONSIVE (MOBILE MENU) ---
   const menuBtn = document.getElementById('menu-btn');
   const mobileMenu = document.getElementById('mobile-menu');
@@ -90,18 +98,42 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      // Simular envío
+      // Envío del formulario
       const submitBtn = leadForm.querySelector('button[type="submit"]');
       const originalText = submitBtn.innerHTML;
       submitBtn.disabled = true;
       submitBtn.innerHTML = '<span class="inline-block animate-spin mr-2">✦</span> Enviando...';
 
-      setTimeout(() => {
-        showToast('¡Gracias por unirte! Te mantendremos al tanto de todas las novedades.');
-        leadForm.reset();
-        submitBtn.disabled = false;
-        submitBtn.innerHTML = originalText;
-      }, 1200);
+      if (supabase) {
+        supabase
+          .from('subscribers')
+          .insert([{ email: email }])
+          .then(({ error }) => {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = originalText;
+            
+            if (error) {
+              console.error('Error al guardar en Supabase:', error);
+              // 23505 es el código Postgres para restricción única (correo duplicado)
+              if (error.code === '23505') {
+                showToast('Este correo ya está registrado en el club de lectura.', 'error');
+              } else {
+                showToast('Hubo un problema al procesar tu suscripción. Inténtalo de nuevo.', 'error');
+              }
+            } else {
+              showToast('¡Gracias por unirte! Te mantendremos al tanto de todas las novedades.');
+              leadForm.reset();
+            }
+          });
+      } else {
+        // Fallback local si Supabase no está cargado
+        setTimeout(() => {
+          showToast('¡Gracias por unirte! Te mantendremos al tanto de todas las novedades.');
+          leadForm.reset();
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = originalText;
+        }, 1000);
+      }
     });
   }
 
