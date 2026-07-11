@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (supabase) {
         supabase
-          .from('subscribers')
+          .from('Comunidad - Lead Magnet')
           .insert([{ email: email }])
           .then(({ error }) => {
             submitBtn.disabled = false;
