@@ -155,31 +155,43 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      // Configuración de destinatario, copia y cuerpo
-      const emailTo = 'tdelosreyesgomezsoriano@gmail.com';
-      const emailCc = 'daniel.montes.cruz@gmail.com';
-      const emailSubject = `Contacto Web Triana - ${subjectText}`;
-      const emailBody = `Nombre completo: ${name}\nCorreo de contacto: ${email}\nMotivo: ${subjectText}\n\nMensaje:\n${message}`;
-
-      // Crear enlace mailto
-      const mailtoLink = `mailto:${emailTo}?cc=${emailCc}&subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
-
       // Feedback visual del botón de envío
       const submitBtn = contactForm.querySelector('button[type="submit"]');
       const originalText = submitBtn.innerHTML;
       submitBtn.disabled = true;
-      submitBtn.innerHTML = '<span class="inline-block animate-spin mr-2">✦</span> Abriendo correo...';
+      submitBtn.innerHTML = '<span class="inline-block animate-spin mr-2">✦</span> Enviando...';
 
-      setTimeout(() => {
-        // Redirigir a mailto
-        window.location.href = mailtoLink;
-        
-        // Mostrar alerta visual de éxito y resetear formulario
-        showToast('¡Redirigiendo a tu gestor de correo!');
-        contactForm.reset();
+      // Enviar usando el servicio FormSubmit vía AJAX
+      fetch('https://formsubmit.co/ajax/tdelosreyesgomezsoriano@gmail.com', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          Nombre: name,
+          Email: email,
+          _subject: `Contacto Web Triana - ${subjectText}`,
+          Mensaje: message,
+          _cc: 'daniel.montes.cruz@gmail.com'
+        })
+      })
+      .then(response => {
         submitBtn.disabled = false;
         submitBtn.innerHTML = originalText;
-      }, 1000);
+        if (response.ok) {
+          showToast('¡Mensaje enviado con éxito! Te responderemos muy pronto.');
+          contactForm.reset();
+        } else {
+          showToast('Hubo un problema al enviar el mensaje. Inténtalo de nuevo.', 'error');
+        }
+      })
+      .catch(error => {
+        console.error('Error al enviar mensaje:', error);
+        showToast('Hubo un problema al enviar el mensaje. Inténtalo de nuevo.', 'error');
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalText;
+      });
     });
   }
 });
