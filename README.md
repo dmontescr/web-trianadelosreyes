@@ -6,7 +6,7 @@ Este repositorio contiene el código fuente de la página web oficial de la escr
 
 *   **Diseño Editorial Premium**: Utiliza una paleta de colores cálida y sofisticada (crema `#faf6f0`, marrón oscuro `#70534c`, café de acento `#e8d8ce`) junto con las tipografías *Cormorant Garamond* (para un aire literario clásico) y *Plus Jakarta Sans* (para textos limpios y legibles).
 *   **Efecto de Libros 3D Interactivos**: Las portadas de las novelas están maquetadas en tres dimensiones y rotan de forma interactiva en respuesta al cursor (*hover*).
-*   **Protección de Derechos e Información**: Puesto que las novelas se encuentran en fase de pre-publicación y certámenes/concursos literarios (los cuales exigen estricto anonimato y novedad), los textos y detalles de las novelas están elegantemente **difuminados y pixelados** mediante filtros CSS, con tarjetas informativas nítidas superpuestas que aseguran la confidencialidad de las obras.
+*   **Protección de Derechos e Información**: Puesto que las novelas se encuentran en fase de pre-publicación y certámenes/concursos literarios (los cuales exigen estricto anonimato y novedad), los textos y detalles de las novelas están elegantemente **difuminados y pixelados** mediante filtros CSS, con tarjetas informativas nítidas superpuestas que aseguran la confidencialidad de las obras. Asimismo, se ha implementado protección a nivel de código para **deshabilitar el clic derecho y el arrastre de imágenes**, reduciendo la posibilidad de copias o descargas no autorizadas del material gráfico.
 *   **Club de Lectura (Comunidad)**: Formulario de suscripción enlazado a una base de datos en la nube para que los lectores reciban boletines, anuncios de presentaciones, firmas de libros y fechas oficiales de publicación.
 *   **Formulario de Contacto Integrado**: Permite a los lectores, prensa o editoriales enviar mensajes de manera directa. Al rellenar el formulario, redirige automáticamente al gestor de correo preconfigurando el asunto, cuerpo, destinatario nuestros correos personales.
 *   **Diseño 100% Responsivo**: Adaptado perfectamente para una visualización óptima en ordenadores, tablets y dispositivos móviles, incluyendo un menú de navegación sticky colapsable.
@@ -23,6 +23,7 @@ Este repositorio contiene el código fuente de la página web oficial de la escr
     *   `IntersectionObserver` para activar animaciones fluidas de aparición (*fade-in-up*) al hacer scroll.
     *   Lógica interactiva del menú de navegación móvil.
     *   Control de redirección y toasts de confirmación del formulario de contacto.
+    *   Protección de propiedad intelectual mediante interceptación global de eventos de ratón para desactivar el menú contextual (`contextmenu`) y la acción de arrastre (`dragstart`) en imágenes.
 4.  **Supabase Client SDK**: Integración directa en el cliente para la gestión de las suscripciones de los usuarios en tiempo real.
 5.  **Scripts de Procesamiento de Imagen (Python / Pillow)**: Scripts auxiliares para automatizar el recorte de transparencias del logotipo y la compilación del set completo de favicons con el círculo de fondo corporativo.
 

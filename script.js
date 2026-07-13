@@ -194,4 +194,16 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
+  // --- PROTECCIÓN DE IMÁGENES (DESHABILITAR CLIC DERECHO Y ARRASTRE) ---
+  document.addEventListener('contextmenu', (e) => {
+    if (e.target.tagName === 'IMG') {
+      e.preventDefault();
+    }
+  });
+
+  document.addEventListener('dragstart', (e) => {
+    if (e.target.tagName === 'IMG') {
+      e.preventDefault();
+    }
+  });
 });
