@@ -11,6 +11,7 @@ Este repositorio contiene el código fuente de la página web oficial de la escr
 *   **Formulario de Contacto Integrado**: Permite a los lectores, prensa o editoriales enviar mensajes de manera directa. Al rellenar el formulario, redirige automáticamente al gestor de correo preconfigurando el asunto, cuerpo, destinatario nuestros correos personales.
 *   **Diseño 100% Responsivo**: Adaptado perfectamente para una visualización óptima en ordenadores, tablets y dispositivos móviles, incluyendo un menú de navegación sticky colapsable.
 *   **Paquete Completo de Favicons**: Icono del sitio personalizado con el logotipo de la mariposa negra sobre un círculo crema sólido (`#faf6f0`), adaptado a todos los formatos estándar (Android, Apple, navegadores modernos y de escritorio) para óptima visualización en temas oscuros y claros.
+*   **Optimización SEO Técnico (Invisible)**: Incorporación de directivas de rastreo e indexación (`sitemap.xml` y `robots.txt`), configuraciones de URL canónicas para unificar la indexación, etiquetas meta enriquecidas para redes sociales (Open Graph y Twitter Cards) y metadatos estructurados Schema JSON-LD de tipo `Person`/`Author` para conectar inequívocamente su dominio e identidad digital.
 
 ---
 
@@ -60,6 +61,8 @@ create policy "Permitir inserciones públicas" on "Comunidad - Lead Magnet"
 ├── index.html                  # Estructura principal y contenido de la landing page
 ├── style.css                   # Definición del tema de Tailwind v4 y clases 3D
 ├── script.js                   # Interactividad, menú móvil e integración con Supabase
+├── sitemap.xml                 # Mapa del sitio para indexación en buscadores (SEO)
+├── robots.txt                  # Directivas de rastreo para rastreadores web (SEO)
 ├── images/                     # Directorio de recursos gráficos e imágenes de marca
 │   ├── logo mariposa.png       # Logotipo oficial de la mariposa con fondo transparente
 │   ├── triana-perfil.jpg       # Fotografía de perfil de la escritora
