@@ -67,6 +67,7 @@ create policy "Permitir inserciones públicas" on "Comunidad - Lead Magnet"
 ├── images/                     # Directorio de recursos gráficos e imágenes de marca
 │   ├── logo mariposa.png       # Logotipo oficial de la mariposa con fondo transparente
 │   ├── triana-perfil.jpg       # Fotografía de perfil de la escritora
+│   ├── triana-head.jpg         # Imagen optimizada para cabeceras y vistas previas en redes sociales (Open Graph)
 │   └── triana-sobre-mi.jpg     # Imagen de apoyo para la sección biográfica
 ├── Docs/                       # Carpeta con los documentos de texto originales (.docx)
 │   ├── Triana de los Reyes - Biografia.docx
