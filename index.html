@@ -10,11 +10,26 @@
     />
 
     <!-- SEO Avanzado y Redes Sociales -->
+    <meta name="robots" content="index, follow, max-image-preview:large" />
     <link rel="canonical" href="https://trianadelosreyes.com/" />
     <meta
       name="keywords"
       content="Triana de los Reyes, Triana de los Reyes escritora, Triana de los Reyes novelista, novelas de Triana de los Reyes, escritora española"
     />
+
+    <link rel="image_src" href="https://trianadelosreyes.com/images/triana-perfil.jpg" />
+    <link rel="preload" as="image" href="https://trianadelosreyes.com/images/triana-perfil.jpg" />
+
+    <!-- Google PageMap Thumbnail Annotation -->
+    <!--
+    <PageMap>
+      <DataObject type="thumbnail">
+        <Attribute name="src" value="https://trianadelosreyes.com/images/triana-perfil.jpg"/>
+        <Attribute name="width" value="400"/>
+        <Attribute name="height" value="500"/>
+      </DataObject>
+    </PageMap>
+    -->
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
@@ -141,6 +156,7 @@
           <img
             src="images/logo mariposa.png"
             alt="Logotipo Triana de los Reyes"
+            data-nosnippet
             class="h-12 w-auto transition-transform duration-500 group-hover:rotate-12"
           />
           <h1
@@ -319,6 +335,7 @@
           <img
             src="images/triana-perfil.jpg"
             alt="Retrato profesional de Triana de los Reyes"
+            itemprop="image"
             class="w-full h-auto rounded-lg shadow-xl object-cover aspect-[4/5] filter sepia-[15%]"
           />
         </div>
@@ -394,6 +411,7 @@
             <img
               src="images/logo mariposa.png"
               alt="Firma de la autora"
+              data-nosnippet
               class="h-16 w-auto opacity-70"
             />
             <div>
@@ -698,6 +716,7 @@
           <img
             src="images/logo mariposa.png"
             alt="Decoración mariposa"
+            data-nosnippet
             class="w-80 h-auto"
           />
         </div>
@@ -868,6 +887,7 @@
             <img
               src="images/logo mariposa.png"
               alt="Logotipo Triana de los Reyes"
+              data-nosnippet
               class="h-10 w-auto opacity-90"
             />
             <span
