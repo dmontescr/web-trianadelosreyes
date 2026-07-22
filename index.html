@@ -17,11 +17,11 @@
       content="Triana de los Reyes, Triana de los Reyes escritora, Triana de los Reyes novelista, novelas de Triana de los Reyes, escritora española, Triana, Triana escritora"
     />
 
+    <meta name="thumbnail" content="https://trianadelosreyes.com/images/triana-perfil.jpg" />
     <link rel="image_src" href="https://trianadelosreyes.com/images/triana-perfil.jpg" />
     <link rel="preload" as="image" href="https://trianadelosreyes.com/images/triana-perfil.jpg" />
 
     <!-- Google PageMap Thumbnail Annotation -->
-    <!--
     <PageMap>
       <DataObject type="thumbnail">
         <Attribute name="src" value="https://trianadelosreyes.com/images/triana-perfil.jpg"/>
@@ -29,7 +29,6 @@
         <Attribute name="height" value="500"/>
       </DataObject>
     </PageMap>
-    -->
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
@@ -63,15 +62,18 @@
         "@context": "https://schema.org",
         "@graph": [
           {
-            "@type": "WebPage",
+            "@type": ["WebPage", "ProfilePage"],
             "@id": "https://trianadelosreyes.com/#webpage",
             "url": "https://trianadelosreyes.com/",
             "name": "Triana de los Reyes | Escritora",
             "description": "Sitio web oficial de Triana de los Reyes, escritora. Descubre sus novelas, proyectos narrativos y únete a su club de lectores.",
             "primaryImageOfPage": {
               "@type": "ImageObject",
-              "id": "https://trianadelosreyes.com/#primaryimage",
+              "@id": "https://trianadelosreyes.com/#primaryimage",
               "url": "https://trianadelosreyes.com/images/triana-perfil.jpg"
+            },
+            "mainEntity": {
+              "@id": "https://trianadelosreyes.com/#author"
             }
           },
           {
