@@ -1,11 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // --- INICIALIZACIÓN DE SUPABASE ---
-  const supabaseUrl = 'https://kfuppexuvrxfyqbeslnu.supabase.co';
-  const supabaseKey = 'sb_publishable_Ai2rFKZnWnbzYLAuvHKllQ_WgFBZJDM';
-  let supabase = null;
-  if (window.supabase) {
-    supabase = window.supabase.createClient(supabaseUrl, supabaseKey);
-  }
+  // --- CONFIGURACIÓN DE BREVO (EMAIL MARKETING) ---
+  const BREVO_FORM_ACTION_URL = 'https://17747fd8.sibforms.com/serve/MUIFAH0lstrhJ6ztEqhvXgZbfmXqtGewuwOjTzPJLGBGfsE-wU5EyzVz5ihG0YyW3jfttSQsrwN8782k5f9OmbC-WM2cybnv9VDbZBLcbfyvSTnTXhZ1agKZnIJIiUv_dy7dyLGS_2TWudb1YDZuIriFAXFFH09iqPBhwrIM9jE4MEdz4PUI5lpjx2INEeFnW-Vg9X0fGCjK5RPMew==';
 
   // --- MENU RESPONSIVE (MOBILE MENU) ---
   const menuBtn = document.getElementById('menu-btn');
@@ -93,47 +88,59 @@ document.addEventListener('DOMContentLoaded', () => {
       const emailInput = document.getElementById('lead-email');
       const email = emailInput ? emailInput.value.trim() : '';
 
-      if (email === '') {
+      if (email === '' || !email.includes('@')) {
         showToast('Por favor, introduce un correo electrónico válido.', 'error');
         return;
       }
 
-      // Envío del formulario
+      // Feedback visual del botón de envío
       const submitBtn = leadForm.querySelector('button[type="submit"]');
       const originalText = submitBtn.innerHTML;
       submitBtn.disabled = true;
       submitBtn.innerHTML = '<span class="inline-block animate-spin mr-2">✦</span> Enviando...';
 
-      if (supabase) {
-        supabase
-          .from('Comunidad - Lead Magnet')
-          .insert([{ email: email }])
-          .then(({ error }) => {
-            submitBtn.disabled = false;
-            submitBtn.innerHTML = originalText;
-            
-            if (error) {
-              console.error('Error al guardar en Supabase:', error);
-              // 23505 es el código Postgres para restricción única (correo duplicado)
-              if (error.code === '23505') {
-                showToast('Este correo ya está registrado en el club de lectura.', 'error');
-              } else {
-                showToast('Hubo un problema al procesar tu suscripción. Inténtalo de nuevo.', 'error');
-              }
-            } else {
-              showToast('¡Gracias por unirte! Te mantendremos al tanto de todas las novedades.');
-              leadForm.reset();
-            }
-          });
-      } else {
-        // Fallback local si Supabase no está cargado
+      // Si aún no se ha configurado la URL de Brevo, ofrecemos modo simulación para pruebas
+      if (!BREVO_FORM_ACTION_URL) {
+        console.info('Brevo: BREVO_FORM_ACTION_URL no está configurada aún en script.js. Ejecutando en modo de prueba.');
         setTimeout(() => {
           showToast('¡Gracias por unirte! Te mantendremos al tanto de todas las novedades.');
           leadForm.reset();
           submitBtn.disabled = false;
           submitBtn.innerHTML = originalText;
-        }, 1000);
+        }, 800);
+        return;
       }
+
+      // Preparar los datos del formulario para enviar a Brevo
+      const formData = new FormData(leadForm);
+      if (!formData.get('EMAIL')) {
+        formData.append('EMAIL', email);
+      }
+      if (!formData.has('email_address_check')) {
+        formData.append('email_address_check', '');
+      }
+      if (!formData.has('locale')) {
+        formData.append('locale', 'es');
+      }
+
+      // Enviar solicitud POST al endpoint seguro de suscripción de Brevo
+      fetch(BREVO_FORM_ACTION_URL, {
+        method: 'POST',
+        body: formData,
+        mode: 'no-cors' // Permite el envío cross-origin seguro sin revelar credenciales privadas
+      })
+        .then(() => {
+          showToast('¡Gracias por unirte! Te mantendremos al tanto de todas las novedades.');
+          leadForm.reset();
+        })
+        .catch((error) => {
+          console.error('Error al suscribir en Brevo:', error);
+          showToast('Hubo un problema al procesar tu suscripción. Inténtalo de nuevo.', 'error');
+        })
+        .finally(() => {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = originalText;
+        });
     });
   }
 

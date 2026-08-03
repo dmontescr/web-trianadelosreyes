@@ -797,11 +797,14 @@
             <input
               type="email"
               id="lead-email"
+              name="EMAIL"
               placeholder="Tu correo electrónico favorito"
               required
               class="flex-grow px-5 py-4 border border-brand-primary/20 rounded-sm focus:outline-none focus:border-brand-primary focus:ring-1 focus:ring-brand-primary bg-brand-bg/50 text-brand-dark placeholder:text-brand-dark/40 text-sm transition-all"
               aria-label="Correo electrónico para suscripción"
             />
+            <input type="hidden" name="email_address_check" value="" />
+            <input type="hidden" name="locale" value="es" />
             <button
               type="submit"
               class="px-8 py-4 bg-brand-primary text-brand-bg hover:bg-brand-primary-light font-medium rounded-sm shadow-md transition-all duration-300 shrink-0 text-sm cursor-pointer"
@@ -1030,9 +1033,7 @@
       </div>
     </div>
 
-    <!-- Supabase JS Client SDK -->
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <!-- Vanilla JS Interactive logic -->
-    <script src="script.js?v=2"></script>
+    <script src="script.js?v=3"></script>
   </body>
 </html>

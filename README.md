@@ -24,35 +24,32 @@ Este repositorio contiene el código fuente de la página web oficial de la escr
     *   Lógica interactiva del menú de navegación móvil.
     *   Control de redirección y toasts de confirmación del formulario de contacto.
     *   Protección de propiedad intelectual mediante interceptación global de eventos de ratón para desactivar el menú contextual (`contextmenu`) y la acción de arrastre (`dragstart`) en imágenes.
-4.  **Supabase Client SDK**: Integración directa en el cliente para la gestión de las suscripciones de los usuarios en tiempo real.
+4.  **Brevo (Email Marketing)**: Integración mediante formulario de suscripción seguro y asíncrono (AJAX) para la gestión automatizada de listas de correo, newsletters y campañas de email marketing del Club de Lectores.
 5.  **Scripts de Procesamiento de Imagen (Python / Pillow)**: Scripts auxiliares para automatizar el recorte de transparencias del logotipo y la compilación del set completo de favicons con fondo transparente y escala maximizada.
 
 ---
 
-## 💾 Integración y Configuración del Backend (Supabase)
+## 📬 Integración y Configuración del Club de Lectores (Brevo)
 
-El formulario de suscripción está enlazado directamente a una base de datos en Supabase. Para que el sistema funcione correctamente, la base de datos debe disponer de una tabla con la siguiente estructura y políticas de seguridad (RLS):
+El formulario de suscripción del Club de Lectores está conectado a la plataforma de Email Marketing **Brevo**.
 
-### Sentencia SQL de Inicialización
+### Pasos para conectar tu cuenta de Brevo:
 
-Ejecuta este código en el **SQL Editor** de tu panel de control de Supabase:
-
-```sql
--- 1. Crear la tabla para almacenar los correos
-create table if not exists "Comunidad - Lead Magnet" (
-  id bigint primary key generated always as identity,
-  email text not null unique,
-  created_at timestamp with time zone default timezone('utc'::text, now()) not null
-);
-
--- 2. Habilitar Row Level Security (RLS) para mayor seguridad
-alter table "Comunidad - Lead Magnet" enable row level security;
-
--- 3. Crear una política para permitir que cualquier usuario anónimo (la web pública) inserte registros
-create policy "Permitir inserciones públicas" on "Comunidad - Lead Magnet"
-  for insert
-  with check (true);
-```
+1. **Crear o acceder a tu cuenta en Brevo**: Inicia sesión en [app.brevo.com](https://app.brevo.com/).
+2. **Crear una Lista de Contactos**: Ve a **Contactos** > **Listas** y crea una lista (por ejemplo: *«Club de Lectores Triana»*).
+3. **Crear un Formulario de Suscripción**:
+   - Ve a **Contactos** > **Formularios** y pulsa en **Crear un nuevo formulario de suscripción**.
+   - Asigna un nombre al formulario y selecciona la lista de contactos creada en el paso 2.
+   - Configura las opciones de suscripción deseadas (confirmación simple o doble opt-in).
+4. **Obtener la URL de Acción del Formulario**:
+   - En el paso final (**Compartir** / **HTML**), copia la URL que aparece dentro del atributo `action="..."` (ejemplo: `https://xxxxxx.sibforms.com/serve/MUIEAB...`).
+5. **Configurar en el Proyecto**:
+   - Abre el archivo `script.js`.
+   - Pega tu URL en la variable `BREVO_FORM_ACTION_URL`:
+     ```javascript
+     const BREVO_FORM_ACTION_URL = 'https://xxxxxx.sibforms.com/serve/MUIEAB...';
+     ```
+   - ¡Listo! Las altas se sincronizarán en tiempo real directamente con tu lista de Brevo.
 
 ---
 
@@ -61,7 +58,7 @@ create policy "Permitir inserciones públicas" on "Comunidad - Lead Magnet"
 ```text
 ├── index.html                  # Estructura principal y contenido de la landing page
 ├── style.css                   # Definición del tema de Tailwind v4 y clases 3D
-├── script.js                   # Interactividad, menú móvil e integración con Supabase
+├── script.js                   # Interactividad, menú móvil e integración con Brevo
 ├── sitemap.xml                 # Mapa del sitio para indexación en buscadores (SEO)
 ├── robots.txt                  # Directivas de rastreo para rastreadores web (SEO)
 ├── images/                     # Directorio de recursos gráficos e imágenes de marca
