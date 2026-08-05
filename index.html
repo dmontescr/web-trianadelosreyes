@@ -69,7 +69,7 @@
       content="https://trianadelosreyes.com/images/triana-perfil.jpg"
     />
 
-    <!-- Datos Estructurados / Schema JSON-LD (Persona y Autora) -->
+    <!-- Datos Estructurados / Schema JSON-LD (Persona, Autora y Perfil) -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -83,7 +83,8 @@
             "primaryImageOfPage": {
               "@type": "ImageObject",
               "@id": "https://trianadelosreyes.com/#primaryimage",
-              "url": "https://trianadelosreyes.com/images/triana-perfil.jpg"
+              "url": "https://trianadelosreyes.com/images/triana-perfil.jpg",
+              "caption": "Triana de los Reyes, escritora y novelista"
             },
             "mainEntity": {
               "@id": "https://trianadelosreyes.com/#author"
@@ -93,14 +94,26 @@
             "@type": "Person",
             "@id": "https://trianadelosreyes.com/#author",
             "name": "Triana de los Reyes",
+            "alternateName": [
+              "Triana de los Reyes Gómez Soriano",
+              "Triana de los Reyes Escritora",
+              "Triana de los Reyes Novelista"
+            ],
             "url": "https://trianadelosreyes.com/",
             "image": {
               "@type": "ImageObject",
-              "url": "https://trianadelosreyes.com/images/triana-perfil.jpg"
+              "url": "https://trianadelosreyes.com/images/triana-perfil.jpg",
+              "caption": "Triana de los Reyes, escritora y novelista",
+              "width": "800",
+              "height": "1000"
             },
-            "sameAs": ["https://www.instagram.com/trianadlosreyes"],
-            "jobTitle": "Escritora",
-            "description": "Escritora. Una mirada sencilla es el hogar de las historias más fascinantes."
+            "sameAs": [
+              "https://www.instagram.com/trianadlosreyes",
+              "https://x.com/t_dlosreyes"
+            ],
+            "jobTitle": ["Escritora", "Novelista", "Autora"],
+            "knowsAbout": ["Literatura", "Novela contemporánea", "Narrativa de ficción", "Escritura creativa"],
+            "description": "Escritora y novelista. Una mirada sencilla es el hogar de las historias más fascinantes."
           }
         ]
       }
@@ -202,6 +215,7 @@
             src="images/logo mariposa.png"
             alt="Logotipo Triana de los Reyes"
             data-nosnippet
+            role="presentation"
             class="h-12 w-auto transition-transform duration-500 group-hover:rotate-12"
           />
           <h1
@@ -378,7 +392,8 @@
           ></div>
           <img
             src="images/triana-perfil.jpg"
-            alt="Retrato profesional de Triana de los Reyes"
+            alt="Triana de los Reyes, escritora y novelista"
+            title="Triana de los Reyes — Escritora y Novelista"
             itemprop="image"
             class="w-full h-auto rounded-lg shadow-xl object-cover aspect-[4/5] filter sepia-[15%]"
           />
@@ -406,7 +421,7 @@
             <div class="editorial-frame bg-white shadow-lg rounded-sm p-4">
               <img
                 src="images/triana-sobre-mi.jpg"
-                alt="Triana de los Reyes en su espacio de trabajo y documentación"
+                alt="Triana de los Reyes, escritora en su espacio de trabajo y documentación"
                 class="w-full h-auto rounded-sm object-cover aspect-[3/4]"
               />
               <p
@@ -454,7 +469,8 @@
           <div class="pt-4 flex items-center space-x-4">
             <img
               src="images/logo mariposa.png"
-              alt="Firma de la autora"
+              alt=""
+              role="presentation"
               data-nosnippet
               class="h-16 w-auto opacity-70"
             />
@@ -770,7 +786,8 @@
         >
           <img
             src="images/logo mariposa.png"
-            alt="Decoración mariposa"
+            alt=""
+            role="presentation"
             data-nosnippet
             class="w-80 h-auto"
           />
@@ -946,6 +963,7 @@
             <img
               src="images/logo mariposa.png"
               alt="Logotipo Triana de los Reyes"
+              role="presentation"
               data-nosnippet
               class="h-10 w-auto opacity-90"
             />
