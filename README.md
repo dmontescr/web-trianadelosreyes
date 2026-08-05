@@ -11,45 +11,37 @@ Este repositorio contiene el código fuente de la página web oficial de la escr
 *   **Formulario de Contacto Integrado**: Permite a los lectores, prensa o editoriales enviar mensajes de manera directa. Al rellenar el formulario, redirige automáticamente al gestor de correo preconfigurando el asunto, cuerpo, destinatario nuestros correos personales.
 *   **Diseño 100% Responsivo**: Adaptado perfectamente para una visualización óptima en ordenadores, tablets y dispositivos móviles, incluyendo un menú de navegación sticky colapsable.
 *   **Paquete Completo de Favicons y PWA**: Icono del sitio personalizado con el logotipo de la mariposa negra con fondo 100% transparente y dimensiones maximizadas al ras (para evitar doble círculo blanco y márgenes excesivos en buscadores), adaptado y estandarizado para todos los formatos (Android Chrome, Apple iOS mediante `apple-touch-icon`, Windows Tiles mediante `browserconfig.xml` y navegadores de escritorio). Incluye un archivo `manifest.json` optimizado para cumplir con todos los estándares técnicos y asegurar la visualización correcta de los favicons en todas las plataformas y buscadores. Adicionalmente, se incluye un `favicon.svg` generado con incrustación Base64 para maximizar la puntuación en validadores estrictos.
-*   **Optimización SEO Técnico y de Contenido**: Incorporación de directivas de rastreo e indexación (`sitemap.xml` con fecha `lastmod` actualizada al 22 de julio de 2026 y `robots.txt`), configuraciones de URL canónicas para unificar la indexación, descripción de cabecera optimizada para motores de búsqueda, etiqueta `<meta name="robots" content="max-image-preview:large">`, etiqueta `<meta name="thumbnail">` directa, anotación Google `<PageMap>` explícita para miniaturas de búsqueda, precarga (`link rel="preload"`) e `itemprop="image"` asociadas a `triana-perfil.jpg`. Además, se incluye el atributo `data-nosnippet` en las imágenes secundarias/logotipos de la mariposa para evitar que Google las seleccione como miniatura en la SERP sin afectar al favicon. Etiquetas meta enriquecidas para redes sociales (Open Graph y Twitter Cards) y metadatos estructurados Schema JSON-LD organizados mediante un `@graph` que define explícitamente la página como `ProfilePage` y la relaciona con la entidad `Person`/`Author` mediante `mainEntity`, conectando inequívocamente su dominio e identidad digital. Todos los metadatos están unificados con el descriptor **«Escritora»** como único título profesional. Asimismo, se ha optimizado la estructura semántica de encabezados (H1-H6) garantizando que el nombre de la autora en la cabecera actúe como el único `<h1>` del documento.
+*   **Optimización SEO Técnico y de Contenido**: 
+    * Directivas de rastreo e indexación (`sitemap.xml` con fecha `lastmod` actualizada y `robots.txt`).
+    * Configuración unificada de URLs canónicas y títulos orientados al posicionamiento de la entidad personal y profesional (`Triana de los Reyes | Escritora`).
+    * Directivas avanzadas para buscadores: `<meta name="robots" content="max-image-preview:large">`, `<meta name="thumbnail">` directa, anotación Google `<PageMap>` explícita para miniaturas de búsqueda, precarga (`link rel="preload"`) e `itemprop="image"` asociadas a la foto oficial `triana-perfil.jpg`.
+    * Optimización semántica de imágenes: inclusión de `alt` descriptivos (`Triana de los Reyes, escritora y novelista`) en la fotografía principal y atributos `role="presentation"` y `data-nosnippet` en todos los logotipos decorativos de la mariposa para asegurar que Google elija exclusivamente el retrato oficial como miniatura del resultado en todas las variantes de búsqueda.
+    * Metadatos estructurados Schema JSON-LD organizados mediante un `@graph` que define explícitamente `ProfilePage` y la entidad `Person`/`Author`, enlazando perfiles sociales oficiales (`sameAs`), títulos profesionales (`jobTitle: ["Escritora", "Novelista", "Autora"]`), áreas de conocimiento (`knowsAbout`) y nombres alternativos para potenciar el grafo de conocimiento en Google.
+    * Estructura semántica de encabezados (H1-H6) garantizando que el nombre de la autora en la cabecera actúe como el único `<h1>` del documento.
 
 ---
 
 ## 🛠️ Tecnologías Utilizadas
 
-1.  **HTML5**: Marcado semántico y optimizado para SEO.
+1.  **HTML5**: Marcado semántico y optimizado para SEO y accesibilidad.
 2.  **Vanilla CSS & Tailwind CSS v4**: Diseño visual rápido y moderno utilizando el compilador en caliente de la nueva versión de Tailwind CSS y transiciones personalizadas en CSS nativo.
 3.  **Vanilla JavaScript (ES6+)**:
     *   `IntersectionObserver` para activar animaciones fluidas de aparición (*fade-in-up*) al hacer scroll.
-    *   Lógica interactiva del menú de navegación móvil.
-    *   Control de redirección y toasts de confirmación del formulario de contacto.
+    *   Lógica interactiva del menú de navegación móvil responsive.
+    *   Integración asíncrona (`fetch` no-cors) con Brevo para suscripción instantánea al Club de Lectores.
+    *   Envío asíncrono con FormSubmit y toasts flotantes de confirmación para el formulario de contacto.
     *   Protección de propiedad intelectual mediante interceptación global de eventos de ratón para desactivar el menú contextual (`contextmenu`) y la acción de arrastre (`dragstart`) en imágenes.
-4.  **Brevo (Email Marketing)**: Integración mediante formulario de suscripción seguro y asíncrono (AJAX) para la gestión automatizada de listas de correo, newsletters y campañas de email marketing del Club de Lectores.
+4.  **Brevo (Email Marketing)**: Integración segura para la gestión automatizada de listas de correo, newsletters y campañas de email marketing del Club de Lectores sin exponer credenciales privadas en el cliente.
 5.  **Scripts de Procesamiento de Imagen (Python / Pillow)**: Scripts auxiliares para automatizar el recorte de transparencias del logotipo y la compilación del set completo de favicons con fondo transparente y escala maximizada.
 
 ---
 
-## 📬 Integración y Configuración del Club de Lectores (Brevo)
+## 📬 Integración del Club de Lectores (Brevo)
 
-El formulario de suscripción del Club de Lectores está conectado a la plataforma de Email Marketing **Brevo**.
+El formulario de suscripción del Club de Lectores está conectado a la plataforma de Email Marketing **Brevo** mediante un endpoint seguro de suscripción.
 
-### Pasos para conectar tu cuenta de Brevo:
-
-1. **Crear o acceder a tu cuenta en Brevo**: Inicia sesión en [app.brevo.com](https://app.brevo.com/).
-2. **Crear una Lista de Contactos**: Ve a **Contactos** > **Listas** y crea una lista (por ejemplo: *«Club de Lectores Triana»*).
-3. **Crear un Formulario de Suscripción**:
-   - Ve a **Contactos** > **Formularios** y pulsa en **Crear un nuevo formulario de suscripción**.
-   - Asigna un nombre al formulario y selecciona la lista de contactos creada en el paso 2.
-   - Configura las opciones de suscripción deseadas (confirmación simple o doble opt-in).
-4. **Obtener la URL de Acción del Formulario**:
-   - En el paso final (**Compartir** / **HTML**), copia la URL que aparece dentro del atributo `action="..."` (ejemplo: `https://xxxxxx.sibforms.com/serve/MUIEAB...`).
-5. **Configurar en el Proyecto**:
-   - Abre el archivo `script.js`.
-   - Pega tu URL en la variable `BREVO_FORM_ACTION_URL`:
-     ```javascript
-     const BREVO_FORM_ACTION_URL = 'https://xxxxxx.sibforms.com/serve/MUIEAB...';
-     ```
-   - ¡Listo! Las altas se sincronizarán en tiempo real directamente con tu lista de Brevo.
+* **Lista de contactos vinculada**: `Club de lectores #6`
+* **Envío asíncrono seguro**: Se realiza mediante `fetch` (modo `no-cors`), validando el correo, mostrando spinner de carga y feedback visual mediante toasts flotantes, con campos anti-spam honeypot (`email_address_check`) y localización en español (`locale: es`).
 
 ---
 
@@ -63,7 +55,7 @@ El formulario de suscripción del Club de Lectores está conectado a la platafor
 ├── robots.txt                  # Directivas de rastreo para rastreadores web (SEO)
 ├── images/                     # Directorio de recursos gráficos e imágenes de marca
 │   ├── logo mariposa.png       # Logotipo oficial de la mariposa con fondo transparente
-│   ├── triana-perfil.jpg       # Fotografía de perfil de la escritora
+│   ├── triana-perfil.jpg       # Fotografía oficial de la escritora
 │   ├── triana-head.jpg         # Imagen optimizada para cabeceras y vistas previas en redes sociales (Open Graph)
 │   └── triana-sobre-mi.jpg     # Imagen de apoyo para la sección biográfica
 ├── Docs/                       # Carpeta con los documentos de texto originales (.docx)
@@ -94,6 +86,7 @@ Luego, abre tu navegador y entra en la dirección:
 
 ## ✒️ Autora y Contacto
 
-*   **Escritora:** Triana de los Reyes Gomez Soriano
+*   **Escritora:** Triana de los Reyes Gómez Soriano
 *   **Desarrollo:** Daniel Montes Cruz
 *   **Instagram Oficial:** [@trianadlosreyes](https://instagram.com/trianadlosreyes)
+*   **X (Twitter):** [@t_dlosreyes](https://x.com/t_dlosreyes)
