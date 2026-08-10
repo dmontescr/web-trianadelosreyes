@@ -18,7 +18,7 @@ Este repositorio contiene el código fuente de la página web oficial de la escr
     * Optimización semántica de imágenes: inclusión de `alt` descriptivos (`Triana de los Reyes, escritora y novelista`) en la fotografía principal y atributos `role="presentation"` y `data-nosnippet` en todos los logotipos decorativos de la mariposa para asegurar que Google elija exclusivamente el retrato oficial como miniatura del resultado en todas las variantes de búsqueda.
     * Metadatos estructurados Schema JSON-LD organizados mediante un `@graph` que define explícitamente `ProfilePage` y la entidad `Person`/`Author`, enlazando perfiles sociales oficiales (`sameAs`), títulos profesionales (`jobTitle: ["Escritora", "Novelista", "Autora"]`), áreas de conocimiento (`knowsAbout`) y nombres alternativos para potenciar el grafo de conocimiento en Google.
     * Estructura semántica de encabezados (H1-H6) garantizando que el nombre de la autora en la cabecera actúe como el único `<h1>` del documento.
-*   **Analítica y Seguimiento**: Integración de Google Tag Manager (GTM) con fragmentos asíncronos en `<head>` y `<noscript>` en el `<body>` para una gestión centralizada y eficiente de etiquetas y eventos sin impactar el rendimiento de la web.
+*   **Analítica y Seguimiento**: Integración de Google Analytics 4 (GA4) nativa en el `<head>` mediante `gtag.js` para la medición precisa del tráfico y comportamiento de los usuarios sin impactar el rendimiento de la web.
 
 ---
 
