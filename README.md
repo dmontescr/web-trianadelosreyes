@@ -19,6 +19,10 @@ Este repositorio contiene el código fuente de la página web oficial de la escr
     * Metadatos estructurados Schema JSON-LD organizados mediante un `@graph` que define explícitamente `ProfilePage` y la entidad `Person`/`Author`, enlazando perfiles sociales oficiales (`sameAs`), títulos profesionales (`jobTitle: ["Escritora", "Novelista", "Autora"]`), áreas de conocimiento (`knowsAbout`) y nombres alternativos para potenciar el grafo de conocimiento en Google.
     * Estructura semántica de encabezados (H1-H6) garantizando que el nombre de la autora en la cabecera actúe como el único `<h1>` del documento.
 *   **Analítica y Seguimiento**: Integración de Google Analytics 4 (GA4) nativa en el `<head>` mediante `gtag.js` para la medición precisa del tráfico y comportamiento de los usuarios sin impactar el rendimiento de la web.
+*   **Galería Documental Exclusiva (Acceso QR)**: Página oculta (`ataurique-y-organza-galeria-exclusiva.html`) accesible únicamente mediante el código QR impreso en la novela *Ataurique y Organza* (a través de la redirección temporal `302` desde `/qr` configurada en `_redirects` para Cloudflare Pages):
+    * Bloqueo estricto de indexación (`<meta name="robots" content="noindex, nofollow">` y `noimageindex`), sin enlaces desde menús, pie de página ni `sitemap.xml`.
+    * Cuadrícula *masonry* cronológica responsiva (1 a 4 columnas) con las 52 fotografías históricas optimizadas en formato `.webp` (`loading="lazy"` y `decoding="async"`), manteniendo su relación de aspecto original (altura unificada a `1200 px` en verticales y anchura unificada a `1600 px` en horizontales, con un peso total de ~5,8 MB frente a los 74,6 MB originales).
+    * Visor modal ligero (*Lightbox*) en Vanilla JS con soporte táctil (*swipe*), navegación por teclado, precarga de imágenes adyacentes y tarjeta editorial con la descripción de cada fotografía.
 
 ---
 
@@ -33,7 +37,7 @@ Este repositorio contiene el código fuente de la página web oficial de la escr
     *   Envío asíncrono con FormSubmit y toasts flotantes de confirmación para el formulario de contacto.
     *   Protección de propiedad intelectual mediante interceptación global de eventos de ratón para desactivar el menú contextual (`contextmenu`) y la acción de arrastre (`dragstart`) en imágenes.
 4.  **Brevo (Email Marketing)**: Integración segura para la gestión automatizada de listas de correo, newsletters y campañas de email marketing del Club de Lectores sin exponer credenciales privadas en el cliente.
-5.  **Scripts de Procesamiento de Imagen (Python / Pillow)**: Scripts auxiliares para automatizar el recorte de transparencias del logotipo y la compilación del set completo de favicons con fondo transparente y escala maximizada.
+5.  **Scripts de Procesamiento de Imagen (Python / Pillow)**: Scripts auxiliares para automatizar el recorte de transparencias del logotipo, la compilación del set completo de favicons y el procesamiento por lotes de la galería fotográfica (`scripts/optimize_gallery.py`: corrección EXIF, recorte de bordes de escaneado, unificación proporcional de dimensiones y compresión a `.webp`).
 
 ---
 
@@ -49,23 +53,28 @@ El formulario de suscripción del Club de Lectores está conectado a la platafor
 ## 📁 Estructura del Proyecto
 
 ```text
-├── index.html                  # Estructura principal y contenido de la landing page
-├── style.css                   # Definición del tema de Tailwind v4 y clases 3D
-├── script.js                   # Interactividad, menú móvil e integración con Brevo
-├── sitemap.xml                 # Mapa del sitio para indexación en buscadores (SEO)
-├── robots.txt                  # Directivas de rastreo para rastreadores web (SEO)
-├── images/                     # Directorio de recursos gráficos e imágenes de marca
-│   ├── logo mariposa.png       # Logotipo oficial de la mariposa con fondo transparente
-│   ├── triana-perfil.jpg       # Fotografía oficial de la escritora
-│   ├── triana-head.jpg         # Imagen optimizada para cabeceras y vistas previas en redes sociales (Open Graph)
-│   └── triana-sobre-mi.jpg     # Imagen de apoyo para la sección biográfica
-├── Docs/                       # Carpeta con los documentos de texto originales (.docx)
+├── index.html                                    # Estructura principal y contenido de la landing page
+├── ataurique-y-organza-galeria-exclusiva.html    # Galería documental oculta para lectores (acceso vía QR)
+├── _redirects                                    # Reglas de redirección para Cloudflare Pages (/qr -> galería 302)
+├── style.css                                     # Definición del tema de Tailwind v4 y clases 3D
+├── script.js                                     # Interactividad, menú móvil e integración con Brevo
+├── sitemap.xml                                   # Mapa del sitio para indexación en buscadores (SEO)
+├── robots.txt                                    # Directivas de rastreo para rastreadores web (SEO)
+├── images/                                       # Directorio de recursos gráficos e imágenes de marca
+│   ├── logo mariposa.png                         # Logotipo oficial de la mariposa con fondo transparente
+│   ├── triana-perfil.jpg                         # Fotografía oficial de la escritora
+│   ├── triana-head.jpg                           # Imagen optimizada para cabeceras y vistas previas (Open Graph)
+│   ├── triana-sobre-mi.jpg                       # Imagen de apoyo para la sección biográfica
+│   └── galeria/                                  # 52 fotografías optimizadas en formato WebP (foto-01.webp a foto-52.webp)
+├── scripts/                                      # Scripts de automatización y optimización
+│   └── optimize_gallery.py                       # Script en Python/Pillow para recorte, escalado y conversión WebP por lotes
+├── Docs/                                         # Carpeta con los documentos de texto originales (.docx)
 │   ├── Triana de los Reyes - Biografia.docx
 │   ├── Ataurique y Organza - Sinopsis.docx
 │   └── La chica de la Buhardilla - Sinopsis.docx
-├── favicon.ico                 # Favicon multi-resolución para navegadores de escritorio
-├── manifest.json               # Configuración PWA y de visualización en dispositivos móviles
-└── README.md                   # Documentación del proyecto (este archivo)
+├── favicon.ico                                   # Favicon multi-resolución para navegadores de escritorio
+├── manifest.json                                 # Configuración PWA y de visualización en dispositivos móviles
+└── README.md                                     # Documentación del proyecto (este archivo)
 ```
 
 ---
