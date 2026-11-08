@@ -65,6 +65,7 @@ El formulario de suscripción del Club de Lectores está conectado a la platafor
 │   ├── triana-perfil.jpg                         # Fotografía oficial de la escritora
 │   ├── triana-head.jpg                           # Imagen optimizada para cabeceras y vistas previas (Open Graph)
 │   ├── triana-sobre-mi.jpg                       # Imagen de apoyo para la sección biográfica
+│   ├── vestido-ataurique.webp                    # Ilustración con fondo transparente del boceto del vestido (cabecera galería)
 │   └── galeria/                                  # 52 fotografías optimizadas en formato WebP (foto-01.webp a foto-52.webp)
 ├── scripts/                                      # Scripts de automatización y optimización
 │   └── optimize_gallery.py                       # Script en Python/Pillow para recorte, escalado y conversión WebP por lotes
