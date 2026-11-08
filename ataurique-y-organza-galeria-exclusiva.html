@@ -1,0 +1,3055 @@
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ataurique y Organza — Galería Exclusiva | Triana de los Reyes</title>
+
+    <!-- Bloqueo estricto de indexación y rastreo de enlaces/imágenes -->
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="googlebot" content="noindex, nofollow, noimageindex" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GYX53H4FVF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-GYX53H4FVF', {
+        page_title: 'Galería Exclusiva - Ataurique y Organza'
+      });
+    </script>
+
+    <!-- Favicons & Icons -->
+    <link rel="icon" type="image/png" sizes="48x48" href="/android-icon-48x48.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="theme-color" content="#faf6f0" />
+
+    <!-- Tailwind CSS v4 Browser Compiler -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Estilos base de la web de la escritora -->
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      .font-serif {
+        font-family: "Cormorant Garamond", Georgia, serif;
+      }
+      .font-sans {
+        font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+      }
+
+      /* Cuadrícula responsiva con soporte Masonry cronológico */
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 1.5rem;
+        align-items: start;
+      }
+
+      @media (min-width: 640px) {
+        .gallery-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        .gallery-grid.masonry-ready {
+          grid-auto-rows: 8px;
+          row-gap: 0;
+          column-gap: 1.5rem;
+        }
+        .gallery-grid.masonry-ready .gallery-item {
+          padding-bottom: 1.5rem;
+        }
+      }
+
+      @media (min-width: 1024px) {
+        .gallery-grid {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+      }
+
+      @media (min-width: 1280px) {
+        .gallery-grid {
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+      }
+
+      /* Transiciones suaves para el visor modal (Lightbox) */
+      #lightbox-modal {
+        transition: opacity 0.28s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.28s ease;
+      }
+      #lightbox-modal.is-open {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+      }
+      #lightbox-modal:not(.is-open) {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+      }
+      #lightbox-img {
+        transition: opacity 0.22s ease, transform 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+    </style>
+  </head>
+  <body
+    class="bg-brand-bg text-brand-dark font-sans selection:bg-brand-accent selection:text-brand-dark min-h-screen flex flex-col"
+  >
+    <!-- Header Sobrio -->
+    <header
+      class="sticky top-0 left-0 w-full z-30 glass-nav transition-all duration-300"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between gap-4"
+      >
+        <a
+          href="/"
+          class="flex items-center space-x-3 group"
+          aria-label="Ir a la web principal de Triana de los Reyes"
+        >
+          <img
+            src="images/logo mariposa.png"
+            alt=""
+            role="presentation"
+            data-nosnippet
+            class="h-10 sm:h-11 w-auto transition-transform duration-500 group-hover:rotate-12"
+          />
+          <div>
+            <span
+              class="font-serif text-lg sm:text-xl tracking-widest text-brand-primary font-semibold block leading-none"
+            >
+              TRIANA DE LOS REYES
+            </span>
+            <span
+              class="text-[10px] tracking-widest uppercase text-brand-dark/55 hidden sm:inline-block mt-0.5"
+            >
+              Archivo exclusivo para lectores
+            </span>
+          </div>
+        </a>
+
+        <div class="flex items-center gap-3 sm:gap-5">
+          <span
+            class="hidden md:inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-brand-accent/45 text-brand-primary text-[11px] font-medium tracking-wider uppercase"
+          >
+            <span class="w-1.5 h-1.5 rounded-full bg-brand-primary"></span>
+            Acceso QR · Lectores
+          </span>
+          <a
+            href="/"
+            class="px-4 py-2 border border-brand-primary/25 text-brand-primary hover:bg-brand-primary hover:text-brand-bg text-xs tracking-wider uppercase font-medium rounded-sm transition-all duration-300"
+          >
+            Web de la autora
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="flex-grow">
+      <!-- Encabezado Editorial de Bienvenida -->
+      <section class="pt-12 pb-10 sm:pt-16 sm:pb-14 px-6 max-w-4xl mx-auto text-center fade-in-up">
+        <div
+          class="inline-flex items-center space-x-2 bg-brand-accent/35 text-brand-primary px-3.5 py-1 rounded-full text-[11px] font-semibold tracking-widest uppercase mb-5"
+        >
+          <span>✦</span>
+          <span>Contenido Exclusivo · Edición Lector</span>
+          <span>✦</span>
+        </div>
+
+        <h1
+          class="font-serif text-4xl sm:text-5xl md:text-6xl text-brand-primary font-bold italic tracking-wide leading-tight"
+        >
+          Ataurique y Organza
+        </h1>
+
+        <p
+          class="font-serif text-lg sm:text-xl text-brand-primary-light tracking-widest uppercase mt-2"
+        >
+          Álbum Documental y Fotográfico
+        </p>
+
+        <!-- Nota de bienvenida para el lector -->
+        <div
+          class="mt-8 editorial-frame bg-white/75 backdrop-blur-sm rounded-sm p-6 sm:p-8 shadow-sm text-left sm:text-center max-w-3xl mx-auto"
+        >
+          <p
+            class="text-brand-dark/85 text-sm sm:text-base leading-relaxed"
+          >
+            Gracias por adentrarte en las páginas de <strong><em>Ataurique y Organza</em></strong>.
+            Esta galería exclusiva reúne las <strong>fotografías reales</strong>
+            que acompañan la memoria de la novela, comentadas en primera persona por su protagonista.
+            Desde sus raíces en Sevilla hasta los grandes salones de la alta costura, cada imagen permite
+            poner rostro a las personas, los talleres y los diseños que dieron vida a esta historia.
+          </p>
+          <div class="mt-5 pt-4 border-t border-brand-primary/10 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-6 text-xs text-brand-dark/60">
+            <span class="flex items-center gap-1.5">
+              <svg class="w-4 h-4 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+              </svg>
+              Pulsa sobre cualquier fotografía para verla en grande y leer su historia
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Divisor -->
+      <div class="w-full flex justify-center pb-8 text-brand-primary/30 opacity-60">
+        <span class="text-xl">✦ ✦ ✦</span>
+      </div>
+
+      <!-- Galería Masonry / Grid Responsiva -->
+      <section
+        aria-label="Galería fotográfica de Ataurique y Organza"
+        class="px-4 sm:px-6 pb-24 max-w-7xl mx-auto"
+      >
+        <div id="gallery-grid" class="gallery-grid">
+          <!-- Fotografía 01 -->
+          <figure
+            class="gallery-item group cursor-pointer"
+            data-index="0"
+            data-src="images/galeria/foto-01.webp?v=5"
+            data-number="01"
+            data-orientation="horizontal"
+            data-caption="En la Escuela de la Virgen María de la calle San Laureano, en Sevilla."
+            tabindex="0"
+            role="button"
+            aria-label="Ampliar fotografía 01: En la Escuela de la Virgen María de la calle San Laureano, en Sevilla."
+          >
+            <div class="gallery-card bg-white/80 backdrop-blur-sm border border-brand-primary/15 rounded-sm overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-primary/35 transition-all duration-500">
+              <div class="relative w-full overflow-hidden">
+                <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-brand-dark/80 backdrop-blur-md text-brand-bg font-serif text-xs tracking-widest rounded-xs shadow-sm">
+                  01
+                </span>
+                <div class="absolute inset-0 bg-brand-dark/0 group-hover:bg-brand-dark/15 transition-colors duration-500 z-[5] flex items-center justify-center">
+                  <span class="opacity-0 group-hover:opacity-100 transform scale-90 group-hover:scale-100 transition-all duration-300 bg-brand-bg/95 text-brand-dark px-3.5 py-2 rounded-full shadow-lg flex items-center gap-1.5 text-xs font-medium tracking-wider">
+                    <svg class="w-3.5 h-3.5 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                    </svg>
+                    Ampliar
+                  </span>
+                </div>
+                <img
+                  src="images/galeria/foto-01.webp?v=5"
+                  alt="Fotografía 01 de Ataurique y Organza — En la Escuela de la Virgen María de la calle San Laureano, en Sevilla."
+                  width="1600"
+                  height="935"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-auto block transform group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                />
+              </div>
+              <figcaption class="p-4 sm:p-5 space-y-1.5 border-t border-brand-primary/10">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-serif text-xs font-bold tracking-widest uppercase text-brand-primary">
+                    Fotografía 01
+                  </span>
+                  
+                </div>
+                <p class="text-brand-dark/85 text-xs sm:text-[13px] leading-relaxed font-normal">
+                  En la Escuela de la Virgen María de la calle San Laureano, en Sevilla.
+                </p>
+              </figcaption>
+            </div>
+          </figure>
+          <!-- Fotografía 02 -->
+          <figure
+            class="gallery-item group cursor-pointer"
+            data-index="1"
+            data-src="images/galeria/foto-02.webp?v=5"
+            data-number="02"
+            data-orientation="horizontal"
+            data-caption="Con mis padres, Petronilo y Manuela, y mis hermanos Concha y Joaquín."
+            tabindex="0"
+            role="button"
+            aria-label="Ampliar fotografía 02: Con mis padres, Petronilo y Manuela, y mis hermanos Concha y Joaquín."
+          >
+            <div class="gallery-card bg-white/80 backdrop-blur-sm border border-brand-primary/15 rounded-sm overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-primary/35 transition-all duration-500">
+              <div class="relative w-full overflow-hidden">
+                <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-brand-dark/80 backdrop-blur-md text-brand-bg font-serif text-xs tracking-widest rounded-xs shadow-sm">
+                  02
+                </span>
+                <div class="absolute inset-0 bg-brand-dark/0 group-hover:bg-brand-dark/15 transition-colors duration-500 z-[5] flex items-center justify-center">
+                  <span class="opacity-0 group-hover:opacity-100 transform scale-90 group-hover:scale-100 transition-all duration-300 bg-brand-bg/95 text-brand-dark px-3.5 py-2 rounded-full shadow-lg flex items-center gap-1.5 text-xs font-medium tracking-wider">
+                    <svg class="w-3.5 h-3.5 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                    </svg>
+                    Ampliar
+                  </span>
+                </div>
+                <img
+                  src="images/galeria/foto-02.webp?v=5"
+                  alt="Fotografía 02 de Ataurique y Organza — Con mis padres, Petronilo y Manuela, y mis hermanos Concha y Joaquín."
+                  width="1600"
+                  height="1009"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-auto block transform group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                />
+              </div>
+              <figcaption class="p-4 sm:p-5 space-y-1.5 border-t border-brand-primary/10">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-serif text-xs font-bold tracking-widest uppercase text-brand-primary">
+                    Fotografía 02
+                  </span>
+                  
+                </div>
+                <p class="text-brand-dark/85 text-xs sm:text-[13px] leading-relaxed font-normal">
+                  Con mis padres, Petronilo y Manuela, y mis hermanos Concha y Joaquín.
+                </p>
+              </figcaption>
+            </div>
+          </figure>
+          <!-- Fotografía 03 -->
+          <figure
+            class="gallery-item group cursor-pointer"
+            data-index="2"
+            data-src="images/galeria/foto-03.webp?v=5"
+            data-number="03"
+            data-orientation="vertical"
+            data-caption="Con mi hermano Joaquín el día de nuestra primera comunión, en 1954."
+            tabindex="0"
+            role="button"
+            aria-label="Ampliar fotografía 03: Con mi hermano Joaquín el día de nuestra primera comunión, en 1954."
+          >
+            <div class="gallery-card bg-white/80 backdrop-blur-sm border border-brand-primary/15 rounded-sm overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-primary/35 transition-all duration-500">
+              <div class="relative w-full overflow-hidden">
+                <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-brand-dark/80 backdrop-blur-md text-brand-bg font-serif text-xs tracking-widest rounded-xs shadow-sm">
+                  03
+                </span>
+                <div class="absolute inset-0 bg-brand-dark/0 group-hover:bg-brand-dark/15 transition-colors duration-500 z-[5] flex items-center justify-center">
+                  <span class="opacity-0 group-hover:opacity-100 transform scale-90 group-hover:scale-100 transition-all duration-300 bg-brand-bg/95 text-brand-dark px-3.5 py-2 rounded-full shadow-lg flex items-center gap-1.5 text-xs font-medium tracking-wider">
+                    <svg class="w-3.5 h-3.5 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                    </svg>
+                    Ampliar
+                  </span>
+                </div>
+                <img
+                  src="images/galeria/foto-03.webp?v=5"
+                  alt="Fotografía 03 de Ataurique y Organza — Con mi hermano Joaquín el día de nuestra primera comunión, en 1954."
+                  width="734"
+                  height="1200"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-auto block transform group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                />
+              </div>
+              <figcaption class="p-4 sm:p-5 space-y-1.5 border-t border-brand-primary/10">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-serif text-xs font-bold tracking-widest uppercase text-brand-primary">
+                    Fotografía 03
+                  </span>
+                  
+                </div>
+                <p class="text-brand-dark/85 text-xs sm:text-[13px] leading-relaxed font-normal">
+                  Con mi hermano Joaquín el día de nuestra primera comunión, en 1954.
+                </p>
+              </figcaption>
+            </div>
+          </figure>
+          <!-- Fotografía 04 -->
+          <figure
+            class="gallery-item group cursor-pointer"
+            data-index="3"
+            data-src="images/galeria/foto-04.webp?v=5"
+            data-number="04"
+            data-orientation="vertical"
+            data-caption="Mis padres, Petronilo y Manuela. Así los recuerdo: unidos a pesar de las dificultades."
+            tabindex="0"
+            role="button"
+            aria-label="Ampliar fotografía 04: Mis padres, Petronilo y Manuela. Así los recuerdo: unidos a pesar de las dificultades."
+          >
+            <div class="gallery-card bg-white/80 backdrop-blur-sm border border-brand-primary/15 rounded-sm overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-primary/35 transition-all duration-500">
+              <div class="relative w-full overflow-hidden">
+                <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-brand-dark/80 backdrop-blur-md text-brand-bg font-serif text-xs tracking-widest rounded-xs shadow-sm">
+                  04
+                </span>
+                <div class="absolute inset-0 bg-brand-dark/0 group-hover:bg-brand-dark/15 transition-colors duration-500 z-[5] flex items-center justify-center">
+                  <span class="opacity-0 group-hover:opacity-100 transform scale-90 group-hover:scale-100 transition-all duration-300 bg-brand-bg/95 text-brand-dark px-3.5 py-2 rounded-full shadow-lg flex items-center gap-1.5 text-xs font-medium tracking-wider">
+                    <svg class="w-3.5 h-3.5 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                    </svg>
+                    Ampliar
+                  </span>
+                </div>
+                <img
+                  src="images/galeria/foto-04.webp?v=5"
+                  alt="Fotografía 04 de Ataurique y Organza — Mis padres, Petronilo y Manuela. Así los recuerdo: unidos a pesar de las dificultades."
+                  width="772"
+                  height="1200"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-auto block transform group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                />
+              </div>
+              <figcaption class="p-4 sm:p-5 space-y-1.5 border-t border-brand-primary/10">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-serif text-xs font-bold tracking-widest uppercase text-brand-primary">
+                    Fotografía 04
+                  </span>
+                  
+                </div>
+                <p class="text-brand-dark/85 text-xs sm:text-[13px] leading-relaxed font-normal">
+                  Mis padres, Petronilo y Manuela. Así los recuerdo: unidos a pesar de las dificultades.
+                </p>
+              </figcaption>
+            </div>
+          </figure>
+          <!-- Fotografía 05 -->
+          <figure
+            class="gallery-item group cursor-pointer"
+            data-index="4"
+            data-src="images/galeria/foto-05.webp?v=5"
+            data-number="05"
+            data-orientation="vertical"
+            data-caption="Compartiendo juegos con mis hermanos en una calle de Sevilla."
+            tabindex="0"
+            role="button"
+            aria-label="Ampliar fotografía 05: Compartiendo juegos con mis hermanos en una calle de Sevilla."
+          >
+            <div class="gallery-card bg-white/80 backdrop-blur-sm border border-brand-primary/15 rounded-sm overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-primary/35 transition-all duration-500">
+              <div class="relative w-full overflow-hidden">
+                <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-brand-dark/80 backdrop-blur-md text-brand-bg font-serif text-xs tracking-widest rounded-xs shadow-sm">
+                  05
+                </span>
+                <div class="absolute inset-0 bg-brand-dark/0 group-hover:bg-brand-dark/15 transition-colors duration-500 z-[5] flex items-center justify-center">
+                  <span class="opacity-0 group-hover:opacity-100 transform scale-90 group-hover:scale-100 transition-all duration-300 bg-brand-bg/95 text-brand-dark px-3.5 py-2 rounded-full shadow-lg flex items-center gap-1.5 text-xs font-medium tracking-wider">
+                    <svg class="w-3.5 h-3.5 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                    </svg>
+                    Ampliar
+                  </span>
+                </div>
+                <img
+                  src="images/galeria/foto-05.webp?v=5"
+                  alt="Fotografía 05 de Ataurique y Organza — Compartiendo juegos con mis hermanos en una calle de Sevilla."
+                  width="763"
+                  height="1200"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-auto block transform group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                />
+              </div>
+              <figcaption class="p-4 sm:p-5 space-y-1.5 border-t border-brand-primary/10">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-serif text-xs font-bold tracking-widest uppercase text-brand-primary">
+                    Fotografía 05
+                  </span>
+                  
+                </div>
+                <p class="text-brand-dark/85 text-xs sm:text-[13px] leading-relaxed font-normal">
+                  Compartiendo juegos con mis hermanos en una calle de Sevilla.
+                </p>
+              </figcaption>
+            </div>
+          </figure>
+          <!-- Fotografía 06 -->
+          <figure
+            class="gallery-item group cursor-pointer"
+            data-index="5"
+            data-src="images/galeria/foto-06.webp?v=5"
+            data-number="06"
+            data-orientation="vertical"
+            data-caption="Manolo y yo, juntos en nuestra lucha por querernos en libertad."
+            tabindex="0"
+            role="button"
+            aria-label="Ampliar fotografía 06: Manolo y yo, juntos en nuestra lucha por querernos en libertad."
+          >
+            <div class="gallery-card bg-white/80 backdrop-blur-sm border border-brand-primary/15 rounded-sm overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-primary/35 transition-all duration-500">
+              <div class="relative w-full overflow-hidden">
+                <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-brand-dark/80 backdrop-blur-md text-brand-bg font-serif text-xs tracking-widest rounded-xs shadow-sm">
+                  06
+                </span>
+                <div class="absolute inset-0 bg-brand-dark/0 group-hover:bg-brand-dark/15 transition-colors duration-500 z-[5] flex items-center justify-center">
+                  <span class="opacity-0 group-hover:opacity-100 transform scale-90 group-hover:scale-100 transition-all duration-300 bg-brand-bg/95 text-brand-dark px-3.5 py-2 rounded-full shadow-lg flex items-center gap-1.5 text-xs font-medium tracking-wider">
+                    <svg class="w-3.5 h-3.5 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                    </svg>
+                    Ampliar
+                  </span>
+                </div>
+                <img
+                  src="images/galeria/foto-06.webp?v=5"
+                  alt="Fotografía 06 de Ataurique y Organza — Manolo y yo, juntos en nuestra lucha por querernos en libertad."
+                  width="1124"
+                  height="1200"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-auto block transform group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                />
+              </div>
+              <figcaption class="p-4 sm:p-5 space-y-1.5 border-t border-brand-primary/10">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-serif text-xs font-bold tracking-widest uppercase text-brand-primary">
+                    Fotografía 06
+                  </span>
+                  
+                </div>
+                <p class="text-brand-dark/85 text-xs sm:text-[13px] leading-relaxed font-normal">
+                  Manolo y yo, juntos en nuestra lucha por querernos en libertad.
+                </p>
+              </figcaption>
+            </div>
+          </figure>
+          <!-- Fotografía 07 -->
+          <figure
+            class="gallery-item group cursor-pointer"
+            data-index="6"
+            data-src="images/galeria/foto-07.webp?v=5"
+            data-number="07"
+            data-orientation="horizontal"
+            data-caption="Mi amiga y cómplice, Esperanza, a mi izquierda."
+            tabindex="0"
+            role="button"
+            aria-label="Ampliar fotografía 07: Mi amiga y cómplice, Esperanza, a mi izquierda."
+          >
+            <div class="gallery-card bg-white/80 backdrop-blur-sm border border-brand-primary/15 rounded-sm overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-primary/35 transition-all duration-500">
+              <div class="relative w-full overflow-hidden">
+                <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-brand-dark/80 backdrop-blur-md text-brand-bg font-serif text-xs tracking-widest rounded-xs shadow-sm">
+                  07
+                </span>
+                <div class="absolute inset-0 bg-brand-dark/0 group-hover:bg-brand-dark/15 transition-colors duration-500 z-[5] flex items-center justify-center">
+                  <span class="opacity-0 group-hover:opacity-100 transform scale-90 group-hover:scale-100 transition-all duration-300 bg-brand-bg/95 text-brand-dark px-3.5 py-2 rounded-full shadow-lg flex items-center gap-1.5 text-xs font-medium tracking-wider">
+                    <svg class="w-3.5 h-3.5 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                    </svg>
+                    Ampliar
+                  </span>
+                </div>
+                <img
+                  src="images/galeria/foto-07.webp?v=5"
+                  alt="Fotografía 07 de Ataurique y Organza — Mi amiga y cómplice, Esperanza, a mi izquierda."
+                  width="1600"
+                  height="1202"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-auto block transform group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                />
+              </div>
+              <figcaption class="p-4 sm:p-5 space-y-1.5 border-t border-brand-primary/10">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-serif text-xs font-bold tracking-widest uppercase text-brand-primary">
+                    Fotografía 07
+                  </span>
+                  
+                </div>
+                <p class="text-brand-dark/85 text-xs sm:text-[13px] leading-relaxed font-normal">
+                  Mi amiga y cómplice, Esperanza, a mi izquierda.
+                </p>
+              </figcaption>
+            </div>
+          </figure>
+          <!-- Fotografía 08 -->
+          <figure
+            class="gallery-item group cursor-pointer"
+            data-index="7"
+            data-src="images/galeria/foto-08.webp?v=5"
+            data-number="08"
+            data-orientation="horizontal"
+            data-caption="El día de la presentación de la colección que diseñé junto a Tina Múgica, acompañado también de las modelos Pilar Ruiz, Mari Carmen Abreu, Marisa y Mercedes."
+            tabindex="0"
+            role="button"
+            aria-label="Ampliar fotografía 08: El día de la presentación de la colección que diseñé junto a Tina Múgica, acompañado también de las modelos Pilar Ruiz, Mari Carmen Abreu, Marisa y Mercedes."
+          >
+            <div class="gallery-card bg-white/80 backdrop-blur-sm border border-brand-primary/15 rounded-sm overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-primary/35 transition-all duration-500">
+              <div class="relative w-full overflow-hidden">
+                <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-brand-dark/80 backdrop-blur-md text-brand-bg font-serif text-xs tracking-widest rounded-xs shadow-sm">
+                  08
+                </span>
+                <div class="absolute inset-0 bg-brand-dark/0 group-hover:bg-brand-dark/15 transition-colors duration-500 z-[5] flex items-center justify-center">
+                  <span class="opacity-0 group-hover:opacity-100 transform scale-90 group-hover:scale-100 transition-all duration-300 bg-brand-bg/95 text-brand-dark px-3.5 py-2 rounded-full shadow-lg flex items-center gap-1.5 text-xs font-medium tracking-wider">
+                    <svg class="w-3.5 h-3.5 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                    </svg>
+                    Ampliar
+                  </span>
+                </div>
+                <img
+                  src="images/galeria/foto-08.webp?v=5"
+                  alt="Fotografía 08 de Ataurique y Organza — El día de la presentación de la colección que diseñé junto a Tina Múgica, acompañado también de las modelos Pilar Ruiz, Mari Carmen Abreu, Marisa y Mercedes."
+                  width="1600"
+                  height="1205"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-auto block transform group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                />
+              </div>
+              <figcaption class="p-4 sm:p-5 space-y-1.5 border-t border-brand-primary/10">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-serif text-xs font-bold tracking-widest uppercase text-brand-primary">
+                    Fotografía 08
+                  </span>
+                  
+                </div>
+                <p class="text-brand-dark/85 text-xs sm:text-[13px] leading-relaxed font-normal">
+                  El día de la presentación de la colección que diseñé junto a Tina Múgica, acompañado también de las modelos Pilar Ruiz, Mari Carmen Abreu, Marisa y Mercedes.
+                </p>
+              </figcaption>
+            </div>
+          </figure>
+          <!-- Fotografía 09 -->
+          <figure
+            class="gallery-item group cursor-pointer"
+            data-index="8"
+            data-src="images/galeria/foto-09.webp?v=5"
+            data-number="09"
+            data-orientation="horizontal"
+            data-caption="Tina Múgica en su tienda tras el atentado de 1981 que puso fin a nuestro sueño."
+            tabindex="0"
+            role="button"
+            aria-label="Ampliar fotografía 09: Tina Múgica en su tienda tras el atentado de 1981 que puso fin a nuestro sueño."
+          >
+            <div class="gallery-card bg-white/80 backdrop-blur-sm border border-brand-primary/15 rounded-sm overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-primary/35 transition-all duration-500">
+              <div class="relative w-full overflow-hidden">
+                <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-brand-dark/80 backdrop-blur-md text-brand-bg font-serif text-xs tracking-widest rounded-xs shadow-sm">
+                  09
+                </span>
+                <div class="absolute inset-0 bg-brand-dark/0 group-hover:bg-brand-dark/15 transition-colors duration-500 z-[5] flex items-center justify-center">
+                  <span class="opacity-0 group-hover:opacity-100 transform scale-90 group-hover:scale-100 transition-all duration-300 bg-brand-bg/95 text-brand-dark px-3.5 py-2 rounded-full shadow-lg flex items-center gap-1.5 text-xs font-medium tracking-wider">
+                    <svg class="w-3.5 h-3.5 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                    </svg>
+                    Ampliar
+                  </span>
+                </div>
+                <img
+                  src="images/galeria/foto-09.webp?v=5"
+                  alt="Fotografía 09 de Ataurique y Organza — Tina Múgica en su tienda tras el atentado de 1981 que puso fin a nuestro sueño."
+                  width="1600"
+                  height="1032"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-auto block transform group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                />
+              </div>
+              <figcaption class="p-4 sm:p-5 space-y-1.5 border-t border-brand-primary/10">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-serif text-xs font-bold tracking-widest uppercase text-brand-primary">
+                    Fotografía 09
+                  </span>
+                  
+                </div>
+                <p class="text-brand-dark/85 text-xs sm:text-[13px] leading-relaxed font-normal">
+                  Tina Múgica en su tienda tras el atentado de 1981 que puso fin a nuestro sueño.
+                </p>
+              </figcaption>
+            </div>
+          </figure>
+          <!-- Fotografía 10 -->
+          <figure
+            class="gallery-item group cursor-pointer"
+            data-index="9"
+            data-src="images/galeria/foto-10.webp?v=5"
+            data-number="10"
+            data-orientation="vertical"
+            data-caption="Foto de Tessa de Baviera y Fernando Rey, en la gala en la que concedieron a la princesa el galardón a la «Mujer más elegante»."
+            tabindex="0"
+            role="button"
+            aria-label="Ampliar fotografía 10: Foto de Tessa de Baviera y Fernando Rey, en la gala en la que concedieron a la princesa el galardón a la «Mujer más elegante»."
+          >
+            <div class="gallery-card bg-white/80 backdrop-blur-sm border border-brand-primary/15 rounded-sm overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-primary/35 transition-all duration-500">
+              <div class="relative w-full overflow-hidden">
+                <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-brand-dark/80 backdrop-blur-md text-brand-bg font-serif text-xs tracking-widest rounded-xs shadow-sm">
+                  10
+                </span>
+                <div class="absolute inset-0 bg-brand-dark/0 group-hover:bg-brand-dark/15 transition-colors duration-500 z-[5] flex items-center justify-center">
+                  <span class="opacity-0 group-hover:opacity-100 transform scale-90 group-hover:scale-100 transition-all duration-300 bg-brand-bg/95 text-brand-dark px-3.5 py-2 rounded-full shadow-lg flex items-center gap-1.5 text-xs font-medium tracking-wider">
+                    <svg class="w-3.5 h-3.5 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                    </svg>
+                    Ampliar
+                  </span>
+                </div>
+                <img
+                  src="images/galeria/foto-10.webp?v=5"
+                  alt="Fotografía 10 de Ataurique y Organza — Foto de Tessa de Baviera y Fernando Rey, en la gala en la que concedieron a la princesa el galardón a la «Mujer más elegante»."
+                  width="1027"
+                  height="1200"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-auto block transform group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                />
+              </div>
+              <figcaption class="p-4 sm:p-5 space-y-1.5 border-t border-brand-primary/10">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-serif text-xs font-bold tracking-widest uppercase text-brand-primary">
+                    Fotografía 10
+                  </span>
+                  
+                </div>
+                <p class="text-brand-dark/85 text-xs sm:text-[13px] leading-relaxed font-normal">
+                  Foto de Tessa de Baviera y Fernando Rey, en la gala en la que concedieron a la princesa el galardón a la «Mujer más elegante».
+                </p>
+              </figcaption>
+            </div>
+          </figure>
+          <!-- Fotografía 11 -->
+          <figure
+            class="gallery-item group cursor-pointer"
+            data-index="10"
+            data-src="images/galeria/foto-11.webp?v=5"
+            data-number="11"
+            data-orientation="vertical"
+            data-caption="Recorte de la revista «Garbo», en la que se incluyó el reportaje sobre la gala. Fue la primera vez que uno de mis vestidos ocupaba las páginas de una revista de tirada nacional."
+            tabindex="0"
+            role="button"
+            aria-label="Ampliar fotografía 11: Recorte de la revista «Garbo», en la que se incluyó el reportaje sobre la gala. Fue la primera vez que uno de mis vestidos ocupaba las páginas de una revista de tirada nacional."
+          >
+            <div class="gallery-card bg-white/80 backdrop-blur-sm border border-brand-primary/15 rounded-sm overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-primary/35 transition-all duration-500">
+              <div class="relative w-full overflow-hidden">
+                <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-brand-dark/80 backdrop-blur-md text-brand-bg font-serif text-xs tracking-widest rounded-xs shadow-sm">
+                  11
+                </span>
+                <div class="absolute inset-0 bg-brand-dark/0 group-hover:bg-brand-dark/15 transition-colors duration-500 z-[5] flex items-center justify-center">
+                  <span class="opacity-0 group-hover:opacity-100 transform scale-90 group-hover:scale-100 transition-all duration-300 bg-brand-bg/95 text-brand-dark px-3.5 py-2 rounded-full shadow-lg flex items-center gap-1.5 text-xs font-medium tracking-wider">
+                    <svg class="w-3.5 h-3.5 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                    </svg>
+                    Ampliar
+                  </span>
+                </div>
+                <img
+                  src="images/galeria/foto-11.webp?v=5"
+                  alt="Fotografía 11 de Ataurique y Organza — Recorte de la revista «Garbo», en la que se incluyó el reportaje sobre la gala. Fue la primera vez que uno de mis vestidos ocupaba las páginas de una revista de tirada nacional."
+                  width="794"
+                  height="1200"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-auto block transform group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                />
+              </div>
+              <figcaption class="p-4 sm:p-5 space-y-1.5 border-t border-brand-primary/10">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-serif text-xs font-bold tracking-widest uppercase text-brand-primary">
+                    Fotografía 11
+                  </span>
+                  
+                </div>
+                <p class="text-brand-dark/85 text-xs sm:text-[13px] leading-relaxed font-normal">
+                  Recorte de la revista «Garbo», en la que se incluyó el reportaje sobre la gala. Fue la primera vez que uno de mis vestidos ocupaba las páginas de una revista de tirada nacional.
+                </p>
+              </figcaption>
+            </div>
+          </figure>
+          <!-- Fotografía 12 -->
+          <figure
+            class="gallery-item group cursor-pointer"
+            data-index="11"
+            data-src="images/galeria/foto-12.webp?v=5"
+            data-number="12"
+            data-orientation="vertical"
+            data-caption="En mi taller, donde he sido siempre la versión más auténtica de mí mismo."
+            tabindex="0"
+            role="button"
+            aria-label="Ampliar fotografía 12: En mi taller, donde he sido siempre la versión más auténtica de mí mismo."
+          >
+            <div class="gallery-card bg-white/80 backdrop-blur-sm border border-brand-primary/15 rounded-sm overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-primary/35 transition-all duration-500">
+              <div class="relative w-full overflow-hidden">
+                <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-brand-dark/80 backdrop-blur-md text-brand-bg font-serif text-xs tracking-widest rounded-xs shadow-sm">
+                  12
+                </span>
+                <div class="absolute inset-0 bg-brand-dark/0 group-hover:bg-brand-dark/15 transition-colors duration-500 z-[5] flex items-center justify-center">
+                  <span class="opacity-0 group-hover:opacity-100 transform scale-90 group-hover:scale-100 transition-all duration-300 bg-brand-bg/95 text-brand-dark px-3.5 py-2 rounded-full shadow-lg flex items-center gap-1.5 text-xs font-medium tracking-wider">
+                    <svg class="w-3.5 h-3.5 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                    </svg>
+                    Ampliar
+                  </span>
+                </div>
+                <img
+                  src="images/galeria/foto-12.webp?v=5"
+                  alt="Fotografía 12 de Ataurique y Organza — En mi taller, donde he sido siempre la versión más auténtica de mí mismo."
+                  width="804"
+                  height="1200"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-auto block transform group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                />
+              </div>
+              <figcaption class="p-4 sm:p-5 space-y-1.5 border-t border-brand-primary/10">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-serif text-xs font-bold tracking-widest uppercase text-brand-primary">
+                    Fotografía 12
+                  </span>
+                  <span class="text-[10px] tracking-widest uppercase text-brand-primary/70 font-medium">Serie El Taller · I</span>
+                </div>
+                <p class="text-brand-dark/85 text-xs sm:text-[13px] leading-relaxed font-normal">
+                  En mi taller, donde he sido siempre la versión más auténtica de mí mismo.
+                </p>
+              </figcaption>
+            </div>
+          </figure>
+          <!-- Fotografía 13 -->
+          <figure
+            class="gallery-item group cursor-pointer"
+            data-index="12"
+            data-src="images/galeria/foto-13.webp?v=5"
+            data-number="13"
+            data-orientation="vertical"
+            data-caption="En mi taller, donde he sido siempre la versión más auténtica de mí mismo."
+            tabindex="0"
+            role="button"
+            aria-label="Ampliar fotografía 13: En mi taller, donde he sido siempre la versión más auténtica de mí mismo."
+          >
+            <div class="gallery-card bg-white/80 backdrop-blur-sm border border-brand-primary/15 rounded-sm overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-primary/35 transition-all duration-500">
+              <div class="relative w-full overflow-hidden">
+                <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-brand-dark/80 backdrop-blur-md text-brand-bg font-serif text-xs tracking-widest rounded-xs shadow-sm">
+                  13
+                </span>
+                <div class="absolute inset-0 bg-brand-dark/0 group-hover:bg-brand-dark/15 transition-colors duration-500 z-[5] flex items-center justify-center">
+                  <span class="opacity-0 group-hover:opacity-100 transform scale-90 group-hover:scale-100 transition-all duration-300 bg-brand-bg/95 text-brand-dark px-3.5 py-2 rounded-full shadow-lg flex items-center gap-1.5 text-xs font-medium tracking-wider">
+                    <svg class="w-3.5 h-3.5 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                    </svg>
+                    Ampliar
+                  </span>
+                </div>
+                <img
+                  src="images/galeria/foto-13.webp?v=5"
+                  alt="Fotografía 13 de Ataurique y Organza — En mi taller, donde he sido siempre la versión más auténtica de mí mismo."
+                  width="809"
+                  height="1200"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-auto block transform group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                />
+              </div>
+              <figcaption class="p-4 sm:p-5 space-y-1.5 border-t border-brand-primary/10">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-serif text-xs font-bold tracking-widest uppercase text-brand-primary">
+                    Fotografía 13
+                  </span>
+                  <span class="text-[10px] tracking-widest uppercase text-brand-primary/70 font-medium">Serie El Taller · II</span>
+                </div>
+                <p class="text-brand-dark/85 text-xs sm:text-[13px] leading-relaxed font-normal">
+                  En mi taller, donde he sido siempre la versión más auténtica de mí mismo.
+                </p>
+              </figcaption>
+            </div>
+          </figure>
+          <!-- Fotografía 14 -->
+          <figure
+            class="gallery-item group cursor-pointer"
+            data-index="13"
+            data-src="images/galeria/foto-14.webp?v=5"
+            data-number="14"
+            data-orientation="vertical"
+            data-caption="En mi taller, donde he sido siempre la versión más auténtica de mí mismo."
+            tabindex="0"
+            role="button"
+            aria-label="Ampliar fotografía 14: En mi taller, donde he sido siempre la versión más auténtica de mí mismo."
+          >
+            <div class="gallery-card bg-white/80 backdrop-blur-sm border border-brand-primary/15 rounded-sm overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-primary/35 transition-all duration-500">
+              <div class="relative w-full overflow-hidden">
+                <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-brand-dark/80 backdrop-blur-md text-brand-bg font-serif text-xs tracking-widest rounded-xs shadow-sm">
+                  14
+                </span>
+                <div class="absolute inset-0 bg-brand-dark/0 group-hover:bg-brand-dark/15 transition-colors duration-500 z-[5] flex items-center justify-center">
+                  <span class="opacity-0 group-hover:opacity-100 transform scale-90 group-hover:scale-100 transition-all duration-300 bg-brand-bg/95 text-brand-dark px-3.5 py-2 rounded-full shadow-lg flex items-center gap-1.5 text-xs font-medium tracking-wider">
+                    <svg class="w-3.5 h-3.5 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                    </svg>
+                    Ampliar
+                  </span>
+                </div>
+                <img
+                  src="images/galeria/foto-14.webp?v=5"
+                  alt="Fotografía 14 de Ataurique y Organza — En mi taller, donde he sido siempre la versión más auténtica de mí mismo."
+                  width="811"
+                  height="1200"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-auto block transform group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                />
+              </div>
+              <figcaption class="p-4 sm:p-5 space-y-1.5 border-t border-brand-primary/10">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-serif text-xs font-bold tracking-widest uppercase text-brand-primary">
+                    Fotografía 14
+                  </span>
+                  <span class="text-[10px] tracking-widest uppercase text-brand-primary/70 font-medium">Serie El Taller · III</span>
+                </div>
+                <p class="text-brand-dark/85 text-xs sm:text-[13px] leading-relaxed font-normal">
+                  En mi taller, donde he sido siempre la versión más auténtica de mí mismo.
+                </p>
+              </figcaption>
+            </div>
+          </figure>
+          <!-- Fotografía 15 -->
+          <figure
+            class="gallery-item group cursor-pointer"
+            data-index="14"
+            data-src="images/galeria/foto-15.webp?v=5"
+            data-number="15"
+            data-orientation="vertical"
+            data-caption="En mi taller, donde he sido siempre la versión más auténtica de mí mismo."
+            tabindex="0"
+            role="button"
+            aria-label="Ampliar fotografía 15: En mi taller, donde he sido siempre la versión más auténtica de mí mismo."
+          >
+            <div class="gallery-card bg-white/80 backdrop-blur-sm border border-brand-primary/15 rounded-sm overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-primary/35 transition-all duration-500">
+              <div class="relative w-full overflow-hidden">
+                <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-brand-dark/80 backdrop-blur-md text-brand-bg font-serif text-xs tracking-widest rounded-xs shadow-sm">
+                  15
+                </span>
+                <div class="absolute inset-0 bg-brand-dark/0 group-hover:bg-brand-dark/15 transition-colors duration-500 z-[5] flex items-center justify-center">
+                  <span class="opacity-0 group-hover:opacity-100 transform scale-90 group-hover:scale-100 transition-all duration-300 bg-brand-bg/95 text-brand-dark px-3.5 py-2 rounded-full shadow-lg flex items-center gap-1.5 text-xs font-medium tracking-wider">
+                    <svg class="w-3.5 h-3.5 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                    </svg>
+                    Ampliar
+                  </span>
+                </div>
+                <img
+                  src="images/galeria/foto-15.webp?v=5"
+                  alt="Fotografía 15 de Ataurique y Organza — En mi taller, donde he sido siempre la versión más auténtica de mí mismo."
+                  width="813"
+                  height="1200"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-auto block transform group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                />
+              </div>
+              <figcaption class="p-4 sm:p-5 space-y-1.5 border-t border-brand-primary/10">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-serif text-xs font-bold tracking-widest uppercase text-brand-primary">
+                    Fotografía 15
+                  </span>
+                  <span class="text-[10px] tracking-widest uppercase text-brand-primary/70 font-medium">Serie El Taller · IV</span>
+                </div>
+                <p class="text-brand-dark/85 text-xs sm:text-[13px] leading-relaxed font-normal">
+                  En mi taller, donde he sido siempre la versión más auténtica de mí mismo.
+                </p>
+              </figcaption>
+            </div>
+          </figure>
+          <!-- Fotografía 16 -->
+          <figure
+            class="gallery-item group cursor-pointer"
+            data-index="15"
+            data-src="images/galeria/foto-16.webp?v=5"
+            data-number="16"
+            data-orientation="horizontal"
+            data-caption="Juncal Rivero en el desfile «Doce latidos en alta costura», celebrado en el Hotel Palace de Madrid, en el año 2000. A la izquierda de la pasarela, Octavio Aceves, el diseñador Elio Berhanyer, la condesa de Montarco y Pedro Mansilla."
+            tabindex="0"
+            role="button"
+            aria-label="Ampliar fotografía 16: Juncal Rivero en el desfile «Doce latidos en alta costura», celebrado en el Hotel Palace de Madrid, en el año 2000. A la izquierda de la pasarela, Octavio Aceves, el diseñador Elio Berhanyer, la condesa de Montarco y Pedro Mansilla."
+          >
+            <div class="gallery-card bg-white/80 backdrop-blur-sm border border-brand-primary/15 rounded-sm overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-primary/35 transition-all duration-500">
+              <div class="relative w-full overflow-hidden">
+                <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-brand-dark/80 backdrop-blur-md text-brand-bg font-serif text-xs tracking-widest rounded-xs shadow-sm">
+                  16
+                </span>
+                <div class="absolute inset-0 bg-brand-dark/0 group-hover:bg-brand-dark/15 transition-colors duration-500 z-[5] flex items-center justify-center">
+                  <span class="opacity-0 group-hover:opacity-100 transform scale-90 group-hover:scale-100 transition-all duration-300 bg-brand-bg/95 text-brand-dark px-3.5 py-2 rounded-full shadow-lg flex items-center gap-1.5 text-xs font-medium tracking-wider">
+                    <svg class="w-3.5 h-3.5 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                    </svg>
+                    Ampliar
+                  </span>
+                </div>
+                <img
+                  src="images/galeria/foto-16.webp?v=5"
+                  alt="Fotografía 16 de Ataurique y Organza — Juncal Rivero en el desfile «Doce latidos en alta costura», celebrado en el Hotel Palace de Madrid, en el año 2000. A la izquierda de la pasarela, Octavio Aceves, el diseñador Elio Berhanyer, la condesa de Montarco y Pedro Mansilla."
+                  width="1600"
+                  height="1106"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-auto block transform group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                />
+              </div>
+              <figcaption class="p-4 sm:p-5 space-y-1.5 border-t border-brand-primary/10">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-serif text-xs font-bold tracking-widest uppercase text-brand-primary">
+                    Fotografía 16
+                  </span>
+                  
+                </div>
+                <p class="text-brand-dark/85 text-xs sm:text-[13px] leading-relaxed font-normal">
+                  Juncal Rivero en el desfile «Doce latidos en alta costura», celebrado en el Hotel Palace de Madrid, en el año 2000. A la izquierda de la pasarela, Octavio Aceves, el diseñador Elio Berhanyer, la condesa de Montarco y Pedro Mansilla.
+                </p>
+              </figcaption>
+            </div>
+          </figure>
+          <!-- Fotografía 17 -->
+          <figure
+            class="gallery-item group cursor-pointer"
+            data-index="16"
+            data-src="images/galeria/foto-17.webp?v=5"
+            data-number="17"
+            data-orientation="vertical"
+            data-caption="Uno de los diseños que más aprecio, por la delicadeza de su tejido y sus sutiles bordados, presentado en el desfile «Doce tentaciones de mujer» en 2001."
+            tabindex="0"
+            role="button"
+            aria-label="Ampliar fotografía 17: Uno de los diseños que más aprecio, por la delicadeza de su tejido y sus sutiles bordados, presentado en el desfile «Doce tentaciones de mujer» en 2001."
+          >
+            <div class="gallery-card bg-white/80 backdrop-blur-sm border border-brand-primary/15 rounded-sm overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-primary/35 transition-all duration-500">
+              <div class="relative w-full overflow-hidden">
+                <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-brand-dark/80 backdrop-blur-md text-brand-bg font-serif text-xs tracking-widest rounded-xs shadow-sm">
+                  17
+                </span>
+                <div class="absolute inset-0 bg-brand-dark/0 group-hover:bg-brand-dark/15 transition-colors duration-500 z-[5] flex items-center justify-center">
+                  <span class="opacity-0 group-hover:opacity-100 transform scale-90 group-hover:scale-100 transition-all duration-300 bg-brand-bg/95 text-brand-dark px-3.5 py-2 rounded-full shadow-lg flex items-center gap-1.5 text-xs font-medium tracking-wider">
+                    <svg class="w-3.5 h-3.5 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                    </svg>
+                    Ampliar
+                  </span>
+                </div>
+                <img
+                  src="images/galeria/foto-17.webp?v=5"
+                  alt="Fotografía 17 de Ataurique y Organza — Uno de los diseños que más aprecio, por la delicadeza de su tejido y sus sutiles bordados, presentado en el desfile «Doce tentaciones de mujer» en 2001."
+                  width="800"
+                  height="1200"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-auto block transform group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                />
+              </div>
+              <figcaption class="p-4 sm:p-5 space-y-1.5 border-t border-brand-primary/10">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-serif text-xs font-bold tracking-widest uppercase text-brand-primary">
+                    Fotografía 17
+                  </span>
+                  
+                </div>
+                <p class="text-brand-dark/85 text-xs sm:text-[13px] leading-relaxed font-normal">
+                  Uno de los diseños que más aprecio, por la delicadeza de su tejido y sus sutiles bordados, presentado en el desfile «Doce tentaciones de mujer» en 2001.
+                </p>
+              </figcaption>
+            </div>
+          </figure>
+          <!-- Fotografía 18 -->
+          <figure
+            class="gallery-item group cursor-pointer"
+            data-index="17"
+            data-src="images/galeria/foto-18.webp?v=5"
+            data-number="18"
+            data-orientation="vertical"
+            data-caption="Mi «vestido joya», inspirado en la ópera «Aida», uno de los diseños más icónicos de mi colección, que clausuró el desfile «Doce tentaciones de mujer»."
+            tabindex="0"
+            role="button"
+            aria-label="Ampliar fotografía 18: Mi «vestido joya», inspirado en la ópera «Aida», uno de los diseños más icónicos de mi colección, que clausuró el desfile «Doce tentaciones de mujer»."
+          >
+            <div class="gallery-card bg-white/80 backdrop-blur-sm border border-brand-primary/15 rounded-sm overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-primary/35 transition-all duration-500">
+              <div class="relative w-full overflow-hidden">
+                <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-brand-dark/80 backdrop-blur-md text-brand-bg font-serif text-xs tracking-widest rounded-xs shadow-sm">
+                  18
+                </span>
+                <div class="absolute inset-0 bg-brand-dark/0 group-hover:bg-brand-dark/15 transition-colors duration-500 z-[5] flex items-center justify-center">
+                  <span class="opacity-0 group-hover:opacity-100 transform scale-90 group-hover:scale-100 transition-all duration-300 bg-brand-bg/95 text-brand-dark px-3.5 py-2 rounded-full shadow-lg flex items-center gap-1.5 text-xs font-medium tracking-wider">
+                    <svg class="w-3.5 h-3.5 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                    </svg>
+                    Ampliar
+                  </span>
+                </div>
+                <img
+                  src="images/galeria/foto-18.webp?v=5"
+                  alt="Fotografía 18 de Ataurique y Organza — Mi «vestido joya», inspirado en la ópera «Aida», uno de los diseños más icónicos de mi colección, que clausuró el desfile «Doce tentaciones de mujer»."
+                  width="800"
+                  height="1200"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-auto block transform group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                />
+              </div>
+              <figcaption class="p-4 sm:p-5 space-y-1.5 border-t border-brand-primary/10">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-serif text-xs font-bold tracking-widest uppercase text-brand-primary">
+                    Fotografía 18
+                  </span>
+                  
+                </div>
+                <p class="text-brand-dark/85 text-xs sm:text-[13px] leading-relaxed font-normal">
+                  Mi «vestido joya», inspirado en la ópera «Aida», uno de los diseños más icónicos de mi colección, que clausuró el desfile «Doce tentaciones de mujer».
+                </p>
+              </figcaption>
+            </div>
+          </figure>
+          <!-- Fotografía 19 -->
+          <figure
+            class="gallery-item group cursor-pointer"
+            data-index="18"
+            data-src="images/galeria/foto-19.webp?v=5"
+            data-number="19"
+            data-orientation="horizontal"
+            data-caption="Junto a las Miss España Elisabeth Reyes, Raquel Revuelta y Juncal Rivero —de izquierda a derecha—, saludando tras el desfile que tuvo lugar en el Hotel Palace en 2008."
+            tabindex="0"
+            role="button"
+            aria-label="Ampliar fotografía 19: Junto a las Miss España Elisabeth Reyes, Raquel Revuelta y Juncal Rivero —de izquierda a derecha—, saludando tras el desfile que tuvo lugar en el Hotel Palace en 2008."
+          >
+            <div class="gallery-card bg-white/80 backdrop-blur-sm border border-brand-primary/15 rounded-sm overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-primary/35 transition-all duration-500">
+              <div class="relative w-full overflow-hidden">
+                <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-brand-dark/80 backdrop-blur-md text-brand-bg font-serif text-xs tracking-widest rounded-xs shadow-sm">
+                  19
+                </span>
+                <div class="absolute inset-0 bg-brand-dark/0 group-hover:bg-brand-dark/15 transition-colors duration-500 z-[5] flex items-center justify-center">
+                  <span class="opacity-0 group-hover:opacity-100 transform scale-90 group-hover:scale-100 transition-all duration-300 bg-brand-bg/95 text-brand-dark px-3.5 py-2 rounded-full shadow-lg flex items-center gap-1.5 text-xs font-medium tracking-wider">
+                    <svg class="w-3.5 h-3.5 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                    </svg>
+                    Ampliar
+                  </span>
+                </div>
+                <img
+                  src="images/galeria/foto-19.webp?v=5"
+                  alt="Fotografía 19 de Ataurique y Organza — Junto a las Miss España Elisabeth Reyes, Raquel Revuelta y Juncal Rivero —de izquierda a derecha—, saludando tras el desfile que tuvo lugar en el Hotel Palace en 2008."
+                  width="1600"
+                  height="1065"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-auto block transform group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                />
+              </div>
+              <figcaption class="p-4 sm:p-5 space-y-1.5 border-t border-brand-primary/10">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-serif text-xs font-bold tracking-widest uppercase text-brand-primary">
+                    Fotografía 19
+                  </span>
+                  
+                </div>
+                <p class="text-brand-dark/85 text-xs sm:text-[13px] leading-relaxed font-normal">
+                  Junto a las Miss España Elisabeth Reyes, Raquel Revuelta y Juncal Rivero —de izquierda a derecha—, saludando tras el desfile que tuvo lugar en el Hotel Palace en 2008.
+                </p>
+              </figcaption>
+            </div>
+          </figure>
+          <!-- Fotografía 20 -->
+          <figure
+            class="gallery-item group cursor-pointer"
+            data-index="19"
+            data-src="images/galeria/foto-20.webp?v=5"
+            data-number="20"
+            data-orientation="horizontal"
+            data-caption="El Ayuntamiento de Sevilla me rindió homenaje con este desfile, celebrado con motivo del Premio Dedicación a la Moda que me concedieron en la V edición de Moda de Sevilla en 2009."
+            tabindex="0"
+            role="button"
+            aria-label="Ampliar fotografía 20: El Ayuntamiento de Sevilla me rindió homenaje con este desfile, celebrado con motivo del Premio Dedicación a la Moda que me concedieron en la V edición de Moda de Sevilla en 2009."
+          >
+            <div class="gallery-card bg-white/80 backdrop-blur-sm border border-brand-primary/15 rounded-sm overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-primary/35 transition-all duration-500">
+              <div class="relative w-full overflow-hidden">
+                <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-brand-dark/80 backdrop-blur-md text-brand-bg font-serif text-xs tracking-widest rounded-xs shadow-sm">
+                  20
+                </span>
+                <div class="absolute inset-0 bg-brand-dark/0 group-hover:bg-brand-dark/15 transition-colors duration-500 z-[5] flex items-center justify-center">
+                  <span class="opacity-0 group-hover:opacity-100 transform scale-90 group-hover:scale-100 transition-all duration-300 bg-brand-bg/95 text-brand-dark px-3.5 py-2 rounded-full shadow-lg flex items-center gap-1.5 text-xs font-medium tracking-wider">
+                    <svg class="w-3.5 h-3.5 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                    </svg>
+                    Ampliar
+                  </span>
+                </div>
+                <img
+                  src="images/galeria/foto-20.webp?v=5"
+                  alt="Fotografía 20 de Ataurique y Organza — El Ayuntamiento de Sevilla me rindió homenaje con este desfile, celebrado con motivo del Premio Dedicación a la Moda que me concedieron en la V edición de Moda de Sevilla en 2009."
+                  width="1600"
+                  height="1197"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-auto block transform group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                />
+              </div>
+              <figcaption class="p-4 sm:p-5 space-y-1.5 border-t border-brand-primary/10">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-serif text-xs font-bold tracking-widest uppercase text-brand-primary">
+                    Fotografía 20
+                  </span>
+                  
+                </div>
+                <p class="text-brand-dark/85 text-xs sm:text-[13px] leading-relaxed font-normal">
+                  El Ayuntamiento de Sevilla me rindió homenaje con este desfile, celebrado con motivo del Premio Dedicación a la Moda que me concedieron en la V edición de Moda de Sevilla en 2009.
+                </p>
+              </figcaption>
+            </div>
+          </figure>
+          <!-- Fotografía 21 -->
+          <figure
+            class="gallery-item group cursor-pointer"
+            data-index="20"
+            data-src="images/galeria/foto-21.webp?v=5"
+            data-number="21"
+            data-orientation="horizontal"
+            data-caption="Vestido de baile inspirado en el cuadro «Clotilde con traje de noche», de Joaquín Sorolla, para la exposición «El abrazo del arte», organizada en Matadero Madrid en 2011."
+            tabindex="0"
+            role="button"
+            aria-label="Ampliar fotografía 21: Vestido de baile inspirado en el cuadro «Clotilde con traje de noche», de Joaquín Sorolla, para la exposición «El abrazo del arte», organizada en Matadero Madrid en 2011."
+          >
+            <div class="gallery-card bg-white/80 backdrop-blur-sm border border-brand-primary/15 rounded-sm overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-primary/35 transition-all duration-500">
+              <div class="relative w-full overflow-hidden">
+                <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-brand-dark/80 backdrop-blur-md text-brand-bg font-serif text-xs tracking-widest rounded-xs shadow-sm">
+                  21
+                </span>
+                <div class="absolute inset-0 bg-brand-dark/0 group-hover:bg-brand-dark/15 transition-colors duration-500 z-[5] flex items-center justify-center">
+                  <span class="opacity-0 group-hover:opacity-100 transform scale-90 group-hover:scale-100 transition-all duration-300 bg-brand-bg/95 text-brand-dark px-3.5 py-2 rounded-full shadow-lg flex items-center gap-1.5 text-xs font-medium tracking-wider">
+                    <svg class="w-3.5 h-3.5 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                    </svg>
+                    Ampliar
+                  </span>
+                </div>
+                <img
+                  src="images/galeria/foto-21.webp?v=5"
+                  alt="Fotografía 21 de Ataurique y Organza — Vestido de baile inspirado en el cuadro «Clotilde con traje de noche», de Joaquín Sorolla, para la exposición «El abrazo del arte», organizada en Matadero Madrid en 2011."
+                  width="1600"
+                  height="1195"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-auto block transform group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                />
+              </div>
+              <figcaption class="p-4 sm:p-5 space-y-1.5 border-t border-brand-primary/10">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-serif text-xs font-bold tracking-widest uppercase text-brand-primary">
+                    Fotografía 21
+                  </span>
+                  
+                </div>
+                <p class="text-brand-dark/85 text-xs sm:text-[13px] leading-relaxed font-normal">
+                  Vestido de baile inspirado en el cuadro «Clotilde con traje de noche», de Joaquín Sorolla, para la exposición «El abrazo del arte», organizada en Matadero Madrid en 2011.
+                </p>
+              </figcaption>
+            </div>
+          </figure>
+          <!-- Fotografía 22 -->
+          <figure
+            class="gallery-item group cursor-pointer"
+            data-index="21"
+            data-src="images/galeria/foto-22.webp?v=5"
+            data-number="22"
+            data-orientation="vertical"
+            data-caption="La muñeca Barbie vestida con uno de mis diseños en la muestra organizada por Antonio Azcona en 2019 con motivo de su 60 aniversario."
+            tabindex="0"
+            role="button"
+            aria-label="Ampliar fotografía 22: La muñeca Barbie vestida con uno de mis diseños en la muestra organizada por Antonio Azcona en 2019 con motivo de su 60 aniversario."
+          >
+            <div class="gallery-card bg-white/80 backdrop-blur-sm border border-brand-primary/15 rounded-sm overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-primary/35 transition-all duration-500">
+              <div class="relative w-full overflow-hidden">
+                <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-brand-dark/80 backdrop-blur-md text-brand-bg font-serif text-xs tracking-widest rounded-xs shadow-sm">
+                  22
+                </span>
+                <div class="absolute inset-0 bg-brand-dark/0 group-hover:bg-brand-dark/15 transition-colors duration-500 z-[5] flex items-center justify-center">
+                  <span class="opacity-0 group-hover:opacity-100 transform scale-90 group-hover:scale-100 transition-all duration-300 bg-brand-bg/95 text-brand-dark px-3.5 py-2 rounded-full shadow-lg flex items-center gap-1.5 text-xs font-medium tracking-wider">
+                    <svg class="w-3.5 h-3.5 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                    </svg>
+                    Ampliar
+                  </span>
+                </div>
+                <img
+                  src="images/galeria/foto-22.webp?v=5"
+                  alt="Fotografía 22 de Ataurique y Organza — La muñeca Barbie vestida con uno de mis diseños en la muestra organizada por Antonio Azcona en 2019 con motivo de su 60 aniversario."
+                  width="900"
+                  height="1200"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-auto block transform group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                />
+              </div>
+              <figcaption class="p-4 sm:p-5 space-y-1.5 border-t border-brand-primary/10">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-serif text-xs font-bold tracking-widest uppercase text-brand-primary">
+                    Fotografía 22
+                  </span>
+                  
+                </div>
+                <p class="text-brand-dark/85 text-xs sm:text-[13px] leading-relaxed font-normal">
+                  La muñeca Barbie vestida con uno de mis diseños en la muestra organizada por Antonio Azcona en 2019 con motivo de su 60 aniversario.
+                </p>
+              </figcaption>
+            </div>
+          </figure>
+          <!-- Fotografía 23 -->
+          <figure
+            class="gallery-item group cursor-pointer"
+            data-index="22"
+            data-src="images/galeria/foto-23.webp?v=5"
+            data-number="23"
+            data-orientation="vertical"
+            data-caption="Presentación en 2017 de mi primer perfume, «Haute Couture», inspirado en uno de los diseños más representativos de mi colección, en el que se reflejan las formas y colores de Andalucía."
+            tabindex="0"
+            role="button"
+            aria-label="Ampliar fotografía 23: Presentación en 2017 de mi primer perfume, «Haute Couture», inspirado en uno de los diseños más representativos de mi colección, en el que se reflejan las formas y colores de Andalucía."
+          >
+            <div class="gallery-card bg-white/80 backdrop-blur-sm border border-brand-primary/15 rounded-sm overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-primary/35 transition-all duration-500">
+              <div class="relative w-full overflow-hidden">
+                <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-brand-dark/80 backdrop-blur-md text-brand-bg font-serif text-xs tracking-widest rounded-xs shadow-sm">
+                  23
+                </span>
+                <div class="absolute inset-0 bg-brand-dark/0 group-hover:bg-brand-dark/15 transition-colors duration-500 z-[5] flex items-center justify-center">
+                  <span class="opacity-0 group-hover:opacity-100 transform scale-90 group-hover:scale-100 transition-all duration-300 bg-brand-bg/95 text-brand-dark px-3.5 py-2 rounded-full shadow-lg flex items-center gap-1.5 text-xs font-medium tracking-wider">
+                    <svg class="w-3.5 h-3.5 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                    </svg>
+                    Ampliar
+                  </span>
+                </div>
+                <img
+                  src="images/galeria/foto-23.webp?v=5"
+                  alt="Fotografía 23 de Ataurique y Organza — Presentación en 2017 de mi primer perfume, «Haute Couture», inspirado en uno de los diseños más representativos de mi colección, en el que se reflejan las formas y colores de Andalucía."
+                  width="801"
+                  height="1200"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-auto block transform group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                />
+              </div>
+              <figcaption class="p-4 sm:p-5 space-y-1.5 border-t border-brand-primary/10">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-serif text-xs font-bold tracking-widest uppercase text-brand-primary">
+                    Fotografía 23
+                  </span>
+                  
+                </div>
+                <p class="text-brand-dark/85 text-xs sm:text-[13px] leading-relaxed font-normal">
+                  Presentación en 2017 de mi primer perfume, «Haute Couture», inspirado en uno de los diseños más representativos de mi colección, en el que se reflejan las formas y colores de Andalucía.
+                </p>
+              </figcaption>
+            </div>
+          </figure>
+          <!-- Fotografía 24 -->
+          <figure
+            class="gallery-item group cursor-pointer"
+            data-index="23"
+            data-src="images/galeria/foto-24.webp?v=5"
+            data-number="24"
+            data-orientation="vertical"
+            data-caption="Tuve la oportunidad de aplicar mi experiencia en alta costura a la joyería con el lanzamiento de mi primera colección en 2021."
+            tabindex="0"
+            role="button"
+            aria-label="Ampliar fotografía 24: Tuve la oportunidad de aplicar mi experiencia en alta costura a la joyería con el lanzamiento de mi primera colección en 2021."
+          >
+            <div class="gallery-card bg-white/80 backdrop-blur-sm border border-brand-primary/15 rounded-sm overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-primary/35 transition-all duration-500">
+              <div class="relative w-full overflow-hidden">
+                <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-brand-dark/80 backdrop-blur-md text-brand-bg font-serif text-xs tracking-widest rounded-xs shadow-sm">
+                  24
+                </span>
+                <div class="absolute inset-0 bg-brand-dark/0 group-hover:bg-brand-dark/15 transition-colors duration-500 z-[5] flex items-center justify-center">
+                  <span class="opacity-0 group-hover:opacity-100 transform scale-90 group-hover:scale-100 transition-all duration-300 bg-brand-bg/95 text-brand-dark px-3.5 py-2 rounded-full shadow-lg flex items-center gap-1.5 text-xs font-medium tracking-wider">
+                    <svg class="w-3.5 h-3.5 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                    </svg>
+                    Ampliar
+                  </span>
+                </div>
+                <img
+                  src="images/galeria/foto-24.webp?v=5"
+                  alt="Fotografía 24 de Ataurique y Organza — Tuve la oportunidad de aplicar mi experiencia en alta costura a la joyería con el lanzamiento de mi primera colección en 2021."
+                  width="960"
+                  height="1200"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-auto block transform group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                />
+              </div>
+              <figcaption class="p-4 sm:p-5 space-y-1.5 border-t border-brand-primary/10">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-serif text-xs font-bold tracking-widest uppercase text-brand-primary">
+                    Fotografía 24
+                  </span>
+                  
+                </div>
+                <p class="text-brand-dark/85 text-xs sm:text-[13px] leading-relaxed font-normal">
+                  Tuve la oportunidad de aplicar mi experiencia en alta costura a la joyería con el lanzamiento de mi primera colección en 2021.
+                </p>
+              </figcaption>
+            </div>
+          </figure>
+          <!-- Fotografía 25 -->
+          <figure
+            class="gallery-item group cursor-pointer"
+            data-index="24"
+            data-src="images/galeria/foto-25.webp?v=5"
+            data-number="25"
+            data-orientation="horizontal"
+            data-caption="Impartiendo un curso de técnicas de alta costura. Ha sido siempre una gran satisfacción para mí compartir mi experiencia con apasionados de la moda como yo."
+            tabindex="0"
+            role="button"
+            aria-label="Ampliar fotografía 25: Impartiendo un curso de técnicas de alta costura. Ha sido siempre una gran satisfacción para mí compartir mi experiencia con apasionados de la moda como yo."
+          >
+            <div class="gallery-card bg-white/80 backdrop-blur-sm border border-brand-primary/15 rounded-sm overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-primary/35 transition-all duration-500">
+              <div class="relative w-full overflow-hidden">
+                <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-brand-dark/80 backdrop-blur-md text-brand-bg font-serif text-xs tracking-widest rounded-xs shadow-sm">
+                  25
+                </span>
+                <div class="absolute inset-0 bg-brand-dark/0 group-hover:bg-brand-dark/15 transition-colors duration-500 z-[5] flex items-center justify-center">
+                  <span class="opacity-0 group-hover:opacity-100 transform scale-90 group-hover:scale-100 transition-all duration-300 bg-brand-bg/95 text-brand-dark px-3.5 py-2 rounded-full shadow-lg flex items-center gap-1.5 text-xs font-medium tracking-wider">
+                    <svg class="w-3.5 h-3.5 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                    </svg>
+                    Ampliar
+                  </span>
+                </div>
+                <img
+                  src="images/galeria/foto-25.webp?v=5"
+                  alt="Fotografía 25 de Ataurique y Organza — Impartiendo un curso de técnicas de alta costura. Ha sido siempre una gran satisfacción para mí compartir mi experiencia con apasionados de la moda como yo."
+                  width="1600"
+                  height="1200"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-auto block transform group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                />
+              </div>
+              <figcaption class="p-4 sm:p-5 space-y-1.5 border-t border-brand-primary/10">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-serif text-xs font-bold tracking-widest uppercase text-brand-primary">
+                    Fotografía 25
+                  </span>
+                  
+                </div>
+                <p class="text-brand-dark/85 text-xs sm:text-[13px] leading-relaxed font-normal">
+                  Impartiendo un curso de técnicas de alta costura. Ha sido siempre una gran satisfacción para mí compartir mi experiencia con apasionados de la moda como yo.
+                </p>
+              </figcaption>
+            </div>
+          </figure>
+          <!-- Fotografía 26 -->
+          <figure
+            class="gallery-item group cursor-pointer"
+            data-index="25"
+            data-src="images/galeria/foto-26.webp?v=5"
+            data-number="26"
+            data-orientation="horizontal"
+            data-caption="En estas fotografías reflejo uno de los episodios más importantes de mi carrera y de mi vida personal: el diseño y la confección del vestido de novia de la infanta doña Elena. Junto a la infanta y María Zurita, su prima, quien nos acompañó durante los últimos preparativos."
+            tabindex="0"
+            role="button"
+            aria-label="Ampliar fotografía 26: En estas fotografías reflejo uno de los episodios más importantes de mi carrera y de mi vida personal: el diseño y la confección del vestido de novia de la infanta doña Elena. Junto a la infanta y María Zurita, su prima, quien nos acompañó durante los últimos preparativos."
+          >
+            <div class="gallery-card bg-white/80 backdrop-blur-sm border border-brand-primary/15 rounded-sm overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-primary/35 transition-all duration-500">
+              <div class="relative w-full overflow-hidden">
+                <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-brand-dark/80 backdrop-blur-md text-brand-bg font-serif text-xs tracking-widest rounded-xs shadow-sm">
+                  26
+                </span>
+                <div class="absolute inset-0 bg-brand-dark/0 group-hover:bg-brand-dark/15 transition-colors duration-500 z-[5] flex items-center justify-center">
+                  <span class="opacity-0 group-hover:opacity-100 transform scale-90 group-hover:scale-100 transition-all duration-300 bg-brand-bg/95 text-brand-dark px-3.5 py-2 rounded-full shadow-lg flex items-center gap-1.5 text-xs font-medium tracking-wider">
+                    <svg class="w-3.5 h-3.5 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                    </svg>
+                    Ampliar
+                  </span>
+                </div>
+                <img
+                  src="images/galeria/foto-26.webp?v=5"
+                  alt="Fotografía 26 de Ataurique y Organza — En estas fotografías reflejo uno de los episodios más importantes de mi carrera y de mi vida personal: el diseño y la confección del vestido de novia de la infanta doña Elena. Junto a la infanta y María Zurita, su prima, quien nos acompañó durante los últimos preparativos."
+                  width="1600"
+                  height="1293"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-auto block transform group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                />
+              </div>
+              <figcaption class="p-4 sm:p-5 space-y-1.5 border-t border-brand-primary/10">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-serif text-xs font-bold tracking-widest uppercase text-brand-primary">
+                    Fotografía 26
+                  </span>
+                  
+                </div>
+                <p class="text-brand-dark/85 text-xs sm:text-[13px] leading-relaxed font-normal">
+                  En estas fotografías reflejo uno de los episodios más importantes de mi carrera y de mi vida personal: el diseño y la confección del vestido de novia de la infanta doña Elena. Junto a la infanta y María Zurita, su prima, quien nos acompañó durante los últimos preparativos.
+                </p>
+              </figcaption>
+            </div>
+          </figure>
+          <!-- Fotografía 27 -->
+          <figure
+            class="gallery-item group cursor-pointer"
+            data-index="26"
+            data-src="images/galeria/foto-27.webp?v=5"
+            data-number="27"
+            data-orientation="vertical"
+            data-caption="Junto a la infanta doña Elena durante el convite de la boda, que tuvo lugar en el Real Alcázar de Sevilla."
+            tabindex="0"
+            role="button"
+            aria-label="Ampliar fotografía 27: Junto a la infanta doña Elena durante el convite de la boda, que tuvo lugar en el Real Alcázar de Sevilla."
+          >
+            <div class="gallery-card bg-white/80 backdrop-blur-sm border border-brand-primary/15 rounded-sm overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-primary/35 transition-all duration-500">
+              <div class="relative w-full overflow-hidden">
+                <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-brand-dark/80 backdrop-blur-md text-brand-bg font-serif text-xs tracking-widest rounded-xs shadow-sm">
+                  27
+                </span>
+                <div class="absolute inset-0 bg-brand-dark/0 group-hover:bg-brand-dark/15 transition-colors duration-500 z-[5] flex items-center justify-center">
+                  <span class="opacity-0 group-hover:opacity-100 transform scale-90 group-hover:scale-100 transition-all duration-300 bg-brand-bg/95 text-brand-dark px-3.5 py-2 rounded-full shadow-lg flex items-center gap-1.5 text-xs font-medium tracking-wider">
+                    <svg class="w-3.5 h-3.5 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                    </svg>
+                    Ampliar
+                  </span>
+                </div>
+                <img
+                  src="images/galeria/foto-27.webp?v=5"
+                  alt="Fotografía 27 de Ataurique y Organza — Junto a la infanta doña Elena durante el convite de la boda, que tuvo lugar en el Real Alcázar de Sevilla."
+                  width="869"
+                  height="1200"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-auto block transform group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                />
+              </div>
+              <figcaption class="p-4 sm:p-5 space-y-1.5 border-t border-brand-primary/10">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-serif text-xs font-bold tracking-widest uppercase text-brand-primary">
+                    Fotografía 27
+                  </span>
+                  
+                </div>
+                <p class="text-brand-dark/85 text-xs sm:text-[13px] leading-relaxed font-normal">
+                  Junto a la infanta doña Elena durante el convite de la boda, que tuvo lugar en el Real Alcázar de Sevilla.
+                </p>
+              </figcaption>
+            </div>
+          </figure>
+          <!-- Fotografía 28 -->
+          <figure
+            class="gallery-item group cursor-pointer"
+            data-index="27"
+            data-src="images/galeria/foto-28.webp?v=5"
+            data-number="28"
+            data-orientation="vertical"
+            data-caption="Contemplando el vestido de novia de la infanta doña Elena, que forma parte de la colección de Patrimonio Nacional y de la historia de nuestro país. Actualmente se encuentra en el Palacio Real de Aranjuez, donde puede visitarse."
+            tabindex="0"
+            role="button"
+            aria-label="Ampliar fotografía 28: Contemplando el vestido de novia de la infanta doña Elena, que forma parte de la colección de Patrimonio Nacional y de la historia de nuestro país. Actualmente se encuentra en el Palacio Real de Aranjuez, donde puede visitarse."
+          >
+            <div class="gallery-card bg-white/80 backdrop-blur-sm border border-brand-primary/15 rounded-sm overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-primary/35 transition-all duration-500">
+              <div class="relative w-full overflow-hidden">
+                <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-brand-dark/80 backdrop-blur-md text-brand-bg font-serif text-xs tracking-widest rounded-xs shadow-sm">
+                  28
+                </span>
+                <div class="absolute inset-0 bg-brand-dark/0 group-hover:bg-brand-dark/15 transition-colors duration-500 z-[5] flex items-center justify-center">
+                  <span class="opacity-0 group-hover:opacity-100 transform scale-90 group-hover:scale-100 transition-all duration-300 bg-brand-bg/95 text-brand-dark px-3.5 py-2 rounded-full shadow-lg flex items-center gap-1.5 text-xs font-medium tracking-wider">
+                    <svg class="w-3.5 h-3.5 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                    </svg>
+                    Ampliar
+                  </span>
+                </div>
+                <img
+                  src="images/galeria/foto-28.webp?v=5"
+                  alt="Fotografía 28 de Ataurique y Organza — Contemplando el vestido de novia de la infanta doña Elena, que forma parte de la colección de Patrimonio Nacional y de la historia de nuestro país. Actualmente se encuentra en el Palacio Real de Aranjuez, donde puede visitarse."
+                  width="675"
+                  height="1200"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-auto block transform group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                />
+              </div>
+              <figcaption class="p-4 sm:p-5 space-y-1.5 border-t border-brand-primary/10">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-serif text-xs font-bold tracking-widest uppercase text-brand-primary">
+                    Fotografía 28
+                  </span>
+                  
+                </div>
+                <p class="text-brand-dark/85 text-xs sm:text-[13px] leading-relaxed font-normal">
+                  Contemplando el vestido de novia de la infanta doña Elena, que forma parte de la colección de Patrimonio Nacional y de la historia de nuestro país. Actualmente se encuentra en el Palacio Real de Aranjuez, donde puede visitarse.
+                </p>
+              </figcaption>
+            </div>
+          </figure>
+          <!-- Fotografía 29 -->
+          <figure
+            class="gallery-item group cursor-pointer"
+            data-index="28"
+            data-src="images/galeria/foto-29.webp?v=5"
+            data-number="29"
+            data-orientation="vertical"
+            data-caption="Mi madre durante su incursión en mi taller, disfrutando del privilegio de ser la primera persona en ver terminado el vestido de novia de la infanta doña Elena."
+            tabindex="0"
+            role="button"
+            aria-label="Ampliar fotografía 29: Mi madre durante su incursión en mi taller, disfrutando del privilegio de ser la primera persona en ver terminado el vestido de novia de la infanta doña Elena."
+          >
+            <div class="gallery-card bg-white/80 backdrop-blur-sm border border-brand-primary/15 rounded-sm overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-primary/35 transition-all duration-500">
+              <div class="relative w-full overflow-hidden">
+                <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-brand-dark/80 backdrop-blur-md text-brand-bg font-serif text-xs tracking-widest rounded-xs shadow-sm">
+                  29
+                </span>
+                <div class="absolute inset-0 bg-brand-dark/0 group-hover:bg-brand-dark/15 transition-colors duration-500 z-[5] flex items-center justify-center">
+                  <span class="opacity-0 group-hover:opacity-100 transform scale-90 group-hover:scale-100 transition-all duration-300 bg-brand-bg/95 text-brand-dark px-3.5 py-2 rounded-full shadow-lg flex items-center gap-1.5 text-xs font-medium tracking-wider">
+                    <svg class="w-3.5 h-3.5 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                    </svg>
+                    Ampliar
+                  </span>
+                </div>
+                <img
+                  src="images/galeria/foto-29.webp?v=5"
+                  alt="Fotografía 29 de Ataurique y Organza — Mi madre durante su incursión en mi taller, disfrutando del privilegio de ser la primera persona en ver terminado el vestido de novia de la infanta doña Elena."
+                  width="811"
+                  height="1200"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-auto block transform group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                />
+              </div>
+              <figcaption class="p-4 sm:p-5 space-y-1.5 border-t border-brand-primary/10">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-serif text-xs font-bold tracking-widest uppercase text-brand-primary">
+                    Fotografía 29
+                  </span>
+                  
+                </div>
+                <p class="text-brand-dark/85 text-xs sm:text-[13px] leading-relaxed font-normal">
+                  Mi madre durante su incursión en mi taller, disfrutando del privilegio de ser la primera persona en ver terminado el vestido de novia de la infanta doña Elena.
+                </p>
+              </figcaption>
+            </div>
+          </figure>
+          <!-- Fotografía 30 -->
+          <figure
+            class="gallery-item group cursor-pointer"
+            data-index="29"
+            data-src="images/galeria/foto-30.webp?v=5"
+            data-number="30"
+            data-orientation="vertical"
+            data-caption="En un encuentro con la familia real jordana, a la que siempre me unirá un especial cariño y con la que compartí una época única de mi vida. En la imagen, las princesas Muna y Alia junto al entonces marido de esta, el príncipe Faisal."
+            tabindex="0"
+            role="button"
+            aria-label="Ampliar fotografía 30: En un encuentro con la familia real jordana, a la que siempre me unirá un especial cariño y con la que compartí una época única de mi vida. En la imagen, las princesas Muna y Alia junto al entonces marido de esta, el príncipe Faisal."
+          >
+            <div class="gallery-card bg-white/80 backdrop-blur-sm border border-brand-primary/15 rounded-sm overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-primary/35 transition-all duration-500">
+              <div class="relative w-full overflow-hidden">
+                <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-brand-dark/80 backdrop-blur-md text-brand-bg font-serif text-xs tracking-widest rounded-xs shadow-sm">
+                  30
+                </span>
+                <div class="absolute inset-0 bg-brand-dark/0 group-hover:bg-brand-dark/15 transition-colors duration-500 z-[5] flex items-center justify-center">
+                  <span class="opacity-0 group-hover:opacity-100 transform scale-90 group-hover:scale-100 transition-all duration-300 bg-brand-bg/95 text-brand-dark px-3.5 py-2 rounded-full shadow-lg flex items-center gap-1.5 text-xs font-medium tracking-wider">
+                    <svg class="w-3.5 h-3.5 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                    </svg>
+                    Ampliar
+                  </span>
+                </div>
+                <img
+                  src="images/galeria/foto-30.webp?v=5"
+                  alt="Fotografía 30 de Ataurique y Organza — En un encuentro con la familia real jordana, a la que siempre me unirá un especial cariño y con la que compartí una época única de mi vida. En la imagen, las princesas Muna y Alia junto al entonces marido de esta, el príncipe Faisal."
+                  width="1176"
+                  height="1200"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-auto block transform group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                />
+              </div>
+              <figcaption class="p-4 sm:p-5 space-y-1.5 border-t border-brand-primary/10">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-serif text-xs font-bold tracking-widest uppercase text-brand-primary">
+                    Fotografía 30
+                  </span>
+                  
+                </div>
+                <p class="text-brand-dark/85 text-xs sm:text-[13px] leading-relaxed font-normal">
+                  En un encuentro con la familia real jordana, a la que siempre me unirá un especial cariño y con la que compartí una época única de mi vida. En la imagen, las princesas Muna y Alia junto al entonces marido de esta, el príncipe Faisal.
+                </p>
+              </figcaption>
+            </div>
+          </figure>
+          <!-- Fotografía 31 -->
+          <figure
+            class="gallery-item group cursor-pointer"
+            data-index="30"
+            data-src="images/galeria/foto-31.webp?v=5"
+            data-number="31"
+            data-orientation="horizontal"
+            data-caption="Visitando la ciudad de Petra en uno de mis viajes a Jordania. Tuve el honor de llegar acompañado por el príncipe Faisal, quien pilotaba el helicóptero con el que aterrizamos en el desierto."
+            tabindex="0"
+            role="button"
+            aria-label="Ampliar fotografía 31: Visitando la ciudad de Petra en uno de mis viajes a Jordania. Tuve el honor de llegar acompañado por el príncipe Faisal, quien pilotaba el helicóptero con el que aterrizamos en el desierto."
+          >
+            <div class="gallery-card bg-white/80 backdrop-blur-sm border border-brand-primary/15 rounded-sm overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-primary/35 transition-all duration-500">
+              <div class="relative w-full overflow-hidden">
+                <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-brand-dark/80 backdrop-blur-md text-brand-bg font-serif text-xs tracking-widest rounded-xs shadow-sm">
+                  31
+                </span>
+                <div class="absolute inset-0 bg-brand-dark/0 group-hover:bg-brand-dark/15 transition-colors duration-500 z-[5] flex items-center justify-center">
+                  <span class="opacity-0 group-hover:opacity-100 transform scale-90 group-hover:scale-100 transition-all duration-300 bg-brand-bg/95 text-brand-dark px-3.5 py-2 rounded-full shadow-lg flex items-center gap-1.5 text-xs font-medium tracking-wider">
+                    <svg class="w-3.5 h-3.5 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                    </svg>
+                    Ampliar
+                  </span>
+                </div>
+                <img
+                  src="images/galeria/foto-31.webp?v=5"
+                  alt="Fotografía 31 de Ataurique y Organza — Visitando la ciudad de Petra en uno de mis viajes a Jordania. Tuve el honor de llegar acompañado por el príncipe Faisal, quien pilotaba el helicóptero con el que aterrizamos en el desierto."
+                  width="1600"
+                  height="1200"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-auto block transform group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                />
+              </div>
+              <figcaption class="p-4 sm:p-5 space-y-1.5 border-t border-brand-primary/10">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-serif text-xs font-bold tracking-widest uppercase text-brand-primary">
+                    Fotografía 31
+                  </span>
+                  
+                </div>
+                <p class="text-brand-dark/85 text-xs sm:text-[13px] leading-relaxed font-normal">
+                  Visitando la ciudad de Petra en uno de mis viajes a Jordania. Tuve el honor de llegar acompañado por el príncipe Faisal, quien pilotaba el helicóptero con el que aterrizamos en el desierto.
+                </p>
+              </figcaption>
+            </div>
+          </figure>
+          <!-- Fotografía 32 -->
+          <figure
+            class="gallery-item group cursor-pointer"
+            data-index="31"
+            data-src="images/galeria/foto-32.webp?v=5"
+            data-number="32"
+            data-orientation="vertical"
+            data-caption="Vestido de pedida de la infanta doña Elena, cedido por ella para la exposición «Diseñar como un pintor», retrospectiva sobre mis 40 años de carrera que tuvo lugar en la Galería de Arte Contemporáneo David Bardía en el año 2015."
+            tabindex="0"
+            role="button"
+            aria-label="Ampliar fotografía 32: Vestido de pedida de la infanta doña Elena, cedido por ella para la exposición «Diseñar como un pintor», retrospectiva sobre mis 40 años de carrera que tuvo lugar en la Galería de Arte Contemporáneo David Bardía en el año 2015."
+          >
+            <div class="gallery-card bg-white/80 backdrop-blur-sm border border-brand-primary/15 rounded-sm overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-primary/35 transition-all duration-500">
+              <div class="relative w-full overflow-hidden">
+                <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-brand-dark/80 backdrop-blur-md text-brand-bg font-serif text-xs tracking-widest rounded-xs shadow-sm">
+                  32
+                </span>
+                <div class="absolute inset-0 bg-brand-dark/0 group-hover:bg-brand-dark/15 transition-colors duration-500 z-[5] flex items-center justify-center">
+                  <span class="opacity-0 group-hover:opacity-100 transform scale-90 group-hover:scale-100 transition-all duration-300 bg-brand-bg/95 text-brand-dark px-3.5 py-2 rounded-full shadow-lg flex items-center gap-1.5 text-xs font-medium tracking-wider">
+                    <svg class="w-3.5 h-3.5 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                    </svg>
+                    Ampliar
+                  </span>
+                </div>
+                <img
+                  src="images/galeria/foto-32.webp?v=5"
+                  alt="Fotografía 32 de Ataurique y Organza — Vestido de pedida de la infanta doña Elena, cedido por ella para la exposición «Diseñar como un pintor», retrospectiva sobre mis 40 años de carrera que tuvo lugar en la Galería de Arte Contemporáneo David Bardía en el año 2015."
+                  width="953"
+                  height="1200"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-auto block transform group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                />
+              </div>
+              <figcaption class="p-4 sm:p-5 space-y-1.5 border-t border-brand-primary/10">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-serif text-xs font-bold tracking-widest uppercase text-brand-primary">
+                    Fotografía 32
+                  </span>
+                  
+                </div>
+                <p class="text-brand-dark/85 text-xs sm:text-[13px] leading-relaxed font-normal">
+                  Vestido de pedida de la infanta doña Elena, cedido por ella para la exposición «Diseñar como un pintor», retrospectiva sobre mis 40 años de carrera que tuvo lugar en la Galería de Arte Contemporáneo David Bardía en el año 2015.
+                </p>
+              </figcaption>
+            </div>
+          </figure>
+          <!-- Fotografía 33 -->
+          <figure
+            class="gallery-item group cursor-pointer"
+            data-index="32"
+            data-src="images/galeria/foto-33.webp?v=5"
+            data-number="33"
+            data-orientation="vertical"
+            data-caption="Junto a los vestidos de las princesas Alia y Muna de Jordania, que lucieron en la boda de los entonces Príncipes de Asturias y que también me cedieron para la exposición."
+            tabindex="0"
+            role="button"
+            aria-label="Ampliar fotografía 33: Junto a los vestidos de las princesas Alia y Muna de Jordania, que lucieron en la boda de los entonces Príncipes de Asturias y que también me cedieron para la exposición."
+          >
+            <div class="gallery-card bg-white/80 backdrop-blur-sm border border-brand-primary/15 rounded-sm overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-primary/35 transition-all duration-500">
+              <div class="relative w-full overflow-hidden">
+                <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-brand-dark/80 backdrop-blur-md text-brand-bg font-serif text-xs tracking-widest rounded-xs shadow-sm">
+                  33
+                </span>
+                <div class="absolute inset-0 bg-brand-dark/0 group-hover:bg-brand-dark/15 transition-colors duration-500 z-[5] flex items-center justify-center">
+                  <span class="opacity-0 group-hover:opacity-100 transform scale-90 group-hover:scale-100 transition-all duration-300 bg-brand-bg/95 text-brand-dark px-3.5 py-2 rounded-full shadow-lg flex items-center gap-1.5 text-xs font-medium tracking-wider">
+                    <svg class="w-3.5 h-3.5 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                    </svg>
+                    Ampliar
+                  </span>
+                </div>
+                <img
+                  src="images/galeria/foto-33.webp?v=5"
+                  alt="Fotografía 33 de Ataurique y Organza — Junto a los vestidos de las princesas Alia y Muna de Jordania, que lucieron en la boda de los entonces Príncipes de Asturias y que también me cedieron para la exposición."
+                  width="900"
+                  height="1200"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-auto block transform group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                />
+              </div>
+              <figcaption class="p-4 sm:p-5 space-y-1.5 border-t border-brand-primary/10">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-serif text-xs font-bold tracking-widest uppercase text-brand-primary">
+                    Fotografía 33
+                  </span>
+                  
+                </div>
+                <p class="text-brand-dark/85 text-xs sm:text-[13px] leading-relaxed font-normal">
+                  Junto a los vestidos de las princesas Alia y Muna de Jordania, que lucieron en la boda de los entonces Príncipes de Asturias y que también me cedieron para la exposición.
+                </p>
+              </figcaption>
+            </div>
+          </figure>
+          <!-- Fotografía 34 -->
+          <figure
+            class="gallery-item group cursor-pointer"
+            data-index="33"
+            data-src="images/galeria/foto-34.webp?v=5"
+            data-number="34"
+            data-orientation="horizontal"
+            data-caption="Cristina Sánchez, para quien diseñé un vestido de novia inspirado en motivos taurinos, no faltó a la exposición retrospectiva sobre mi carrera."
+            tabindex="0"
+            role="button"
+            aria-label="Ampliar fotografía 34: Cristina Sánchez, para quien diseñé un vestido de novia inspirado en motivos taurinos, no faltó a la exposición retrospectiva sobre mi carrera."
+          >
+            <div class="gallery-card bg-white/80 backdrop-blur-sm border border-brand-primary/15 rounded-sm overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-primary/35 transition-all duration-500">
+              <div class="relative w-full overflow-hidden">
+                <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-brand-dark/80 backdrop-blur-md text-brand-bg font-serif text-xs tracking-widest rounded-xs shadow-sm">
+                  34
+                </span>
+                <div class="absolute inset-0 bg-brand-dark/0 group-hover:bg-brand-dark/15 transition-colors duration-500 z-[5] flex items-center justify-center">
+                  <span class="opacity-0 group-hover:opacity-100 transform scale-90 group-hover:scale-100 transition-all duration-300 bg-brand-bg/95 text-brand-dark px-3.5 py-2 rounded-full shadow-lg flex items-center gap-1.5 text-xs font-medium tracking-wider">
+                    <svg class="w-3.5 h-3.5 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                    </svg>
+                    Ampliar
+                  </span>
+                </div>
+                <img
+                  src="images/galeria/foto-34.webp?v=5"
+                  alt="Fotografía 34 de Ataurique y Organza — Cristina Sánchez, para quien diseñé un vestido de novia inspirado en motivos taurinos, no faltó a la exposición retrospectiva sobre mi carrera."
+                  width="1600"
+                  height="945"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-auto block transform group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                />
+              </div>
+              <figcaption class="p-4 sm:p-5 space-y-1.5 border-t border-brand-primary/10">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-serif text-xs font-bold tracking-widest uppercase text-brand-primary">
+                    Fotografía 34
+                  </span>
+                  
+                </div>
+                <p class="text-brand-dark/85 text-xs sm:text-[13px] leading-relaxed font-normal">
+                  Cristina Sánchez, para quien diseñé un vestido de novia inspirado en motivos taurinos, no faltó a la exposición retrospectiva sobre mi carrera.
+                </p>
+              </figcaption>
+            </div>
+          </figure>
+          <!-- Fotografía 35 -->
+          <figure
+            class="gallery-item group cursor-pointer"
+            data-index="34"
+            data-src="images/galeria/foto-35.webp?v=5"
+            data-number="35"
+            data-orientation="vertical"
+            data-caption="Junto a Tessa de Baviera y su nieta, con quien la princesa comparte el vestido que lució en el certamen de Miss Elegancia y que formó parte de la muestra."
+            tabindex="0"
+            role="button"
+            aria-label="Ampliar fotografía 35: Junto a Tessa de Baviera y su nieta, con quien la princesa comparte el vestido que lució en el certamen de Miss Elegancia y que formó parte de la muestra."
+          >
+            <div class="gallery-card bg-white/80 backdrop-blur-sm border border-brand-primary/15 rounded-sm overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-primary/35 transition-all duration-500">
+              <div class="relative w-full overflow-hidden">
+                <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-brand-dark/80 backdrop-blur-md text-brand-bg font-serif text-xs tracking-widest rounded-xs shadow-sm">
+                  35
+                </span>
+                <div class="absolute inset-0 bg-brand-dark/0 group-hover:bg-brand-dark/15 transition-colors duration-500 z-[5] flex items-center justify-center">
+                  <span class="opacity-0 group-hover:opacity-100 transform scale-90 group-hover:scale-100 transition-all duration-300 bg-brand-bg/95 text-brand-dark px-3.5 py-2 rounded-full shadow-lg flex items-center gap-1.5 text-xs font-medium tracking-wider">
+                    <svg class="w-3.5 h-3.5 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                    </svg>
+                    Ampliar
+                  </span>
+                </div>
+                <img
+                  src="images/galeria/foto-35.webp?v=5"
+                  alt="Fotografía 35 de Ataurique y Organza — Junto a Tessa de Baviera y su nieta, con quien la princesa comparte el vestido que lució en el certamen de Miss Elegancia y que formó parte de la muestra."
+                  width="709"
+                  height="1200"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-auto block transform group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                />
+              </div>
+              <figcaption class="p-4 sm:p-5 space-y-1.5 border-t border-brand-primary/10">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-serif text-xs font-bold tracking-widest uppercase text-brand-primary">
+                    Fotografía 35
+                  </span>
+                  
+                </div>
+                <p class="text-brand-dark/85 text-xs sm:text-[13px] leading-relaxed font-normal">
+                  Junto a Tessa de Baviera y su nieta, con quien la princesa comparte el vestido que lució en el certamen de Miss Elegancia y que formó parte de la muestra.
+                </p>
+              </figcaption>
+            </div>
+          </figure>
+          <!-- Fotografía 36 -->
+          <figure
+            class="gallery-item group cursor-pointer"
+            data-index="35"
+            data-src="images/galeria/foto-36.webp?v=5"
+            data-number="36"
+            data-orientation="horizontal"
+            data-caption="Con uno de mis vestidos más especiales, el «vestido joya», que también estuvo presente en mi exposición retrospectiva."
+            tabindex="0"
+            role="button"
+            aria-label="Ampliar fotografía 36: Con uno de mis vestidos más especiales, el «vestido joya», que también estuvo presente en mi exposición retrospectiva."
+          >
+            <div class="gallery-card bg-white/80 backdrop-blur-sm border border-brand-primary/15 rounded-sm overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-primary/35 transition-all duration-500">
+              <div class="relative w-full overflow-hidden">
+                <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-brand-dark/80 backdrop-blur-md text-brand-bg font-serif text-xs tracking-widest rounded-xs shadow-sm">
+                  36
+                </span>
+                <div class="absolute inset-0 bg-brand-dark/0 group-hover:bg-brand-dark/15 transition-colors duration-500 z-[5] flex items-center justify-center">
+                  <span class="opacity-0 group-hover:opacity-100 transform scale-90 group-hover:scale-100 transition-all duration-300 bg-brand-bg/95 text-brand-dark px-3.5 py-2 rounded-full shadow-lg flex items-center gap-1.5 text-xs font-medium tracking-wider">
+                    <svg class="w-3.5 h-3.5 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                    </svg>
+                    Ampliar
+                  </span>
+                </div>
+                <img
+                  src="images/galeria/foto-36.webp?v=5"
+                  alt="Fotografía 36 de Ataurique y Organza — Con uno de mis vestidos más especiales, el «vestido joya», que también estuvo presente en mi exposición retrospectiva."
+                  width="1600"
+                  height="944"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-auto block transform group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                />
+              </div>
+              <figcaption class="p-4 sm:p-5 space-y-1.5 border-t border-brand-primary/10">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-serif text-xs font-bold tracking-widest uppercase text-brand-primary">
+                    Fotografía 36
+                  </span>
+                  
+                </div>
+                <p class="text-brand-dark/85 text-xs sm:text-[13px] leading-relaxed font-normal">
+                  Con uno de mis vestidos más especiales, el «vestido joya», que también estuvo presente en mi exposición retrospectiva.
+                </p>
+              </figcaption>
+            </div>
+          </figure>
+          <!-- Fotografía 37 -->
+          <figure
+            class="gallery-item group cursor-pointer"
+            data-index="36"
+            data-src="images/galeria/foto-37.webp?v=5"
+            data-number="37"
+            data-orientation="vertical"
+            data-caption="Junto a la infanta doña Elena, por quien siento un gran aprecio, en un encuentro reciente."
+            tabindex="0"
+            role="button"
+            aria-label="Ampliar fotografía 37: Junto a la infanta doña Elena, por quien siento un gran aprecio, en un encuentro reciente."
+          >
+            <div class="gallery-card bg-white/80 backdrop-blur-sm border border-brand-primary/15 rounded-sm overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-primary/35 transition-all duration-500">
+              <div class="relative w-full overflow-hidden">
+                <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-brand-dark/80 backdrop-blur-md text-brand-bg font-serif text-xs tracking-widest rounded-xs shadow-sm">
+                  37
+                </span>
+                <div class="absolute inset-0 bg-brand-dark/0 group-hover:bg-brand-dark/15 transition-colors duration-500 z-[5] flex items-center justify-center">
+                  <span class="opacity-0 group-hover:opacity-100 transform scale-90 group-hover:scale-100 transition-all duration-300 bg-brand-bg/95 text-brand-dark px-3.5 py-2 rounded-full shadow-lg flex items-center gap-1.5 text-xs font-medium tracking-wider">
+                    <svg class="w-3.5 h-3.5 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                    </svg>
+                    Ampliar
+                  </span>
+                </div>
+                <img
+                  src="images/galeria/foto-37.webp?v=5"
+                  alt="Fotografía 37 de Ataurique y Organza — Junto a la infanta doña Elena, por quien siento un gran aprecio, en un encuentro reciente."
+                  width="671"
+                  height="1200"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-auto block transform group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                />
+              </div>
+              <figcaption class="p-4 sm:p-5 space-y-1.5 border-t border-brand-primary/10">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-serif text-xs font-bold tracking-widest uppercase text-brand-primary">
+                    Fotografía 37
+                  </span>
+                  <span class="text-[10px] tracking-widest uppercase text-brand-primary/70 font-medium">Encuentro reciente · I</span>
+                </div>
+                <p class="text-brand-dark/85 text-xs sm:text-[13px] leading-relaxed font-normal">
+                  Junto a la infanta doña Elena, por quien siento un gran aprecio, en un encuentro reciente.
+                </p>
+              </figcaption>
+            </div>
+          </figure>
+          <!-- Fotografía 38 -->
+          <figure
+            class="gallery-item group cursor-pointer"
+            data-index="37"
+            data-src="images/galeria/foto-38.webp?v=5"
+            data-number="38"
+            data-orientation="vertical"
+            data-caption="Junto a la infanta doña Elena, por quien siento un gran aprecio, en un encuentro reciente."
+            tabindex="0"
+            role="button"
+            aria-label="Ampliar fotografía 38: Junto a la infanta doña Elena, por quien siento un gran aprecio, en un encuentro reciente."
+          >
+            <div class="gallery-card bg-white/80 backdrop-blur-sm border border-brand-primary/15 rounded-sm overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-primary/35 transition-all duration-500">
+              <div class="relative w-full overflow-hidden">
+                <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-brand-dark/80 backdrop-blur-md text-brand-bg font-serif text-xs tracking-widest rounded-xs shadow-sm">
+                  38
+                </span>
+                <div class="absolute inset-0 bg-brand-dark/0 group-hover:bg-brand-dark/15 transition-colors duration-500 z-[5] flex items-center justify-center">
+                  <span class="opacity-0 group-hover:opacity-100 transform scale-90 group-hover:scale-100 transition-all duration-300 bg-brand-bg/95 text-brand-dark px-3.5 py-2 rounded-full shadow-lg flex items-center gap-1.5 text-xs font-medium tracking-wider">
+                    <svg class="w-3.5 h-3.5 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                    </svg>
+                    Ampliar
+                  </span>
+                </div>
+                <img
+                  src="images/galeria/foto-38.webp?v=5"
+                  alt="Fotografía 38 de Ataurique y Organza — Junto a la infanta doña Elena, por quien siento un gran aprecio, en un encuentro reciente."
+                  width="675"
+                  height="1200"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-auto block transform group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                />
+              </div>
+              <figcaption class="p-4 sm:p-5 space-y-1.5 border-t border-brand-primary/10">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-serif text-xs font-bold tracking-widest uppercase text-brand-primary">
+                    Fotografía 38
+                  </span>
+                  <span class="text-[10px] tracking-widest uppercase text-brand-primary/70 font-medium">Encuentro reciente · II</span>
+                </div>
+                <p class="text-brand-dark/85 text-xs sm:text-[13px] leading-relaxed font-normal">
+                  Junto a la infanta doña Elena, por quien siento un gran aprecio, en un encuentro reciente.
+                </p>
+              </figcaption>
+            </div>
+          </figure>
+          <!-- Fotografía 39 -->
+          <figure
+            class="gallery-item group cursor-pointer"
+            data-index="38"
+            data-src="images/galeria/foto-39.webp?v=5"
+            data-number="39"
+            data-orientation="vertical"
+            data-caption="Con mi amiga Paloma San Basilio, a quien admiro y he tenido el honor de vestir en su gira de despedida de los escenarios."
+            tabindex="0"
+            role="button"
+            aria-label="Ampliar fotografía 39: Con mi amiga Paloma San Basilio, a quien admiro y he tenido el honor de vestir en su gira de despedida de los escenarios."
+          >
+            <div class="gallery-card bg-white/80 backdrop-blur-sm border border-brand-primary/15 rounded-sm overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-primary/35 transition-all duration-500">
+              <div class="relative w-full overflow-hidden">
+                <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-brand-dark/80 backdrop-blur-md text-brand-bg font-serif text-xs tracking-widest rounded-xs shadow-sm">
+                  39
+                </span>
+                <div class="absolute inset-0 bg-brand-dark/0 group-hover:bg-brand-dark/15 transition-colors duration-500 z-[5] flex items-center justify-center">
+                  <span class="opacity-0 group-hover:opacity-100 transform scale-90 group-hover:scale-100 transition-all duration-300 bg-brand-bg/95 text-brand-dark px-3.5 py-2 rounded-full shadow-lg flex items-center gap-1.5 text-xs font-medium tracking-wider">
+                    <svg class="w-3.5 h-3.5 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                    </svg>
+                    Ampliar
+                  </span>
+                </div>
+                <img
+                  src="images/galeria/foto-39.webp?v=5"
+                  alt="Fotografía 39 de Ataurique y Organza — Con mi amiga Paloma San Basilio, a quien admiro y he tenido el honor de vestir en su gira de despedida de los escenarios."
+                  width="901"
+                  height="1200"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-auto block transform group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                />
+              </div>
+              <figcaption class="p-4 sm:p-5 space-y-1.5 border-t border-brand-primary/10">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-serif text-xs font-bold tracking-widest uppercase text-brand-primary">
+                    Fotografía 39
+                  </span>
+                  
+                </div>
+                <p class="text-brand-dark/85 text-xs sm:text-[13px] leading-relaxed font-normal">
+                  Con mi amiga Paloma San Basilio, a quien admiro y he tenido el honor de vestir en su gira de despedida de los escenarios.
+                </p>
+              </figcaption>
+            </div>
+          </figure>
+          <!-- Fotografía 40 -->
+          <figure
+            class="gallery-item group cursor-pointer"
+            data-index="39"
+            data-src="images/galeria/foto-40.webp?v=5"
+            data-number="40"
+            data-orientation="horizontal"
+            data-caption="Junto a mi buen amigo Antonio Gala, que siempre me acompañará en el recuerdo y es y será uno de los referentes de nuestra literatura."
+            tabindex="0"
+            role="button"
+            aria-label="Ampliar fotografía 40: Junto a mi buen amigo Antonio Gala, que siempre me acompañará en el recuerdo y es y será uno de los referentes de nuestra literatura."
+          >
+            <div class="gallery-card bg-white/80 backdrop-blur-sm border border-brand-primary/15 rounded-sm overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-primary/35 transition-all duration-500">
+              <div class="relative w-full overflow-hidden">
+                <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-brand-dark/80 backdrop-blur-md text-brand-bg font-serif text-xs tracking-widest rounded-xs shadow-sm">
+                  40
+                </span>
+                <div class="absolute inset-0 bg-brand-dark/0 group-hover:bg-brand-dark/15 transition-colors duration-500 z-[5] flex items-center justify-center">
+                  <span class="opacity-0 group-hover:opacity-100 transform scale-90 group-hover:scale-100 transition-all duration-300 bg-brand-bg/95 text-brand-dark px-3.5 py-2 rounded-full shadow-lg flex items-center gap-1.5 text-xs font-medium tracking-wider">
+                    <svg class="w-3.5 h-3.5 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                    </svg>
+                    Ampliar
+                  </span>
+                </div>
+                <img
+                  src="images/galeria/foto-40.webp?v=5"
+                  alt="Fotografía 40 de Ataurique y Organza — Junto a mi buen amigo Antonio Gala, que siempre me acompañará en el recuerdo y es y será uno de los referentes de nuestra literatura."
+                  width="1600"
+                  height="1200"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-auto block transform group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                />
+              </div>
+              <figcaption class="p-4 sm:p-5 space-y-1.5 border-t border-brand-primary/10">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-serif text-xs font-bold tracking-widest uppercase text-brand-primary">
+                    Fotografía 40
+                  </span>
+                  
+                </div>
+                <p class="text-brand-dark/85 text-xs sm:text-[13px] leading-relaxed font-normal">
+                  Junto a mi buen amigo Antonio Gala, que siempre me acompañará en el recuerdo y es y será uno de los referentes de nuestra literatura.
+                </p>
+              </figcaption>
+            </div>
+          </figure>
+          <!-- Fotografía 41 -->
+          <figure
+            class="gallery-item group cursor-pointer"
+            data-index="40"
+            data-src="images/galeria/foto-41.webp?v=5"
+            data-number="41"
+            data-orientation="vertical"
+            data-caption="Esperanza y Manolo me acompañaron el día de la exposición retrospectiva sobre mi carrera, como lo hicieron y lo harán siempre."
+            tabindex="0"
+            role="button"
+            aria-label="Ampliar fotografía 41: Esperanza y Manolo me acompañaron el día de la exposición retrospectiva sobre mi carrera, como lo hicieron y lo harán siempre."
+          >
+            <div class="gallery-card bg-white/80 backdrop-blur-sm border border-brand-primary/15 rounded-sm overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-primary/35 transition-all duration-500">
+              <div class="relative w-full overflow-hidden">
+                <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-brand-dark/80 backdrop-blur-md text-brand-bg font-serif text-xs tracking-widest rounded-xs shadow-sm">
+                  41
+                </span>
+                <div class="absolute inset-0 bg-brand-dark/0 group-hover:bg-brand-dark/15 transition-colors duration-500 z-[5] flex items-center justify-center">
+                  <span class="opacity-0 group-hover:opacity-100 transform scale-90 group-hover:scale-100 transition-all duration-300 bg-brand-bg/95 text-brand-dark px-3.5 py-2 rounded-full shadow-lg flex items-center gap-1.5 text-xs font-medium tracking-wider">
+                    <svg class="w-3.5 h-3.5 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                    </svg>
+                    Ampliar
+                  </span>
+                </div>
+                <img
+                  src="images/galeria/foto-41.webp?v=5"
+                  alt="Fotografía 41 de Ataurique y Organza — Esperanza y Manolo me acompañaron el día de la exposición retrospectiva sobre mi carrera, como lo hicieron y lo harán siempre."
+                  width="900"
+                  height="1200"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-auto block transform group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                />
+              </div>
+              <figcaption class="p-4 sm:p-5 space-y-1.5 border-t border-brand-primary/10">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-serif text-xs font-bold tracking-widest uppercase text-brand-primary">
+                    Fotografía 41
+                  </span>
+                  
+                </div>
+                <p class="text-brand-dark/85 text-xs sm:text-[13px] leading-relaxed font-normal">
+                  Esperanza y Manolo me acompañaron el día de la exposición retrospectiva sobre mi carrera, como lo hicieron y lo harán siempre.
+                </p>
+              </figcaption>
+            </div>
+          </figure>
+          <!-- Fotografía 42 -->
+          <figure
+            class="gallery-item group cursor-pointer"
+            data-index="41"
+            data-src="images/galeria/foto-42.webp?v=5"
+            data-number="42"
+            data-orientation="horizontal"
+            data-caption="Junto a mi incondicional Ernesto, con quien llevo compartiendo las vivencias y recuerdos de estos últimos veinte años."
+            tabindex="0"
+            role="button"
+            aria-label="Ampliar fotografía 42: Junto a mi incondicional Ernesto, con quien llevo compartiendo las vivencias y recuerdos de estos últimos veinte años."
+          >
+            <div class="gallery-card bg-white/80 backdrop-blur-sm border border-brand-primary/15 rounded-sm overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-primary/35 transition-all duration-500">
+              <div class="relative w-full overflow-hidden">
+                <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-brand-dark/80 backdrop-blur-md text-brand-bg font-serif text-xs tracking-widest rounded-xs shadow-sm">
+                  42
+                </span>
+                <div class="absolute inset-0 bg-brand-dark/0 group-hover:bg-brand-dark/15 transition-colors duration-500 z-[5] flex items-center justify-center">
+                  <span class="opacity-0 group-hover:opacity-100 transform scale-90 group-hover:scale-100 transition-all duration-300 bg-brand-bg/95 text-brand-dark px-3.5 py-2 rounded-full shadow-lg flex items-center gap-1.5 text-xs font-medium tracking-wider">
+                    <svg class="w-3.5 h-3.5 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                    </svg>
+                    Ampliar
+                  </span>
+                </div>
+                <img
+                  src="images/galeria/foto-42.webp?v=5"
+                  alt="Fotografía 42 de Ataurique y Organza — Junto a mi incondicional Ernesto, con quien llevo compartiendo las vivencias y recuerdos de estos últimos veinte años."
+                  width="1600"
+                  height="1065"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-auto block transform group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                />
+              </div>
+              <figcaption class="p-4 sm:p-5 space-y-1.5 border-t border-brand-primary/10">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-serif text-xs font-bold tracking-widest uppercase text-brand-primary">
+                    Fotografía 42
+                  </span>
+                  
+                </div>
+                <p class="text-brand-dark/85 text-xs sm:text-[13px] leading-relaxed font-normal">
+                  Junto a mi incondicional Ernesto, con quien llevo compartiendo las vivencias y recuerdos de estos últimos veinte años.
+                </p>
+              </figcaption>
+            </div>
+          </figure>
+          <!-- Fotografía 43 -->
+          <figure
+            class="gallery-item group cursor-pointer"
+            data-index="42"
+            data-src="images/galeria/foto-43.webp?v=5"
+            data-number="43"
+            data-orientation="vertical"
+            data-caption="Mis inseparables compañeros han formado parte de mi familia y me han acompañado en los mejores momentos y en los más tristes. En la imagen, mi querido Max."
+            tabindex="0"
+            role="button"
+            aria-label="Ampliar fotografía 43: Mis inseparables compañeros han formado parte de mi familia y me han acompañado en los mejores momentos y en los más tristes. En la imagen, mi querido Max."
+          >
+            <div class="gallery-card bg-white/80 backdrop-blur-sm border border-brand-primary/15 rounded-sm overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-primary/35 transition-all duration-500">
+              <div class="relative w-full overflow-hidden">
+                <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-brand-dark/80 backdrop-blur-md text-brand-bg font-serif text-xs tracking-widest rounded-xs shadow-sm">
+                  43
+                </span>
+                <div class="absolute inset-0 bg-brand-dark/0 group-hover:bg-brand-dark/15 transition-colors duration-500 z-[5] flex items-center justify-center">
+                  <span class="opacity-0 group-hover:opacity-100 transform scale-90 group-hover:scale-100 transition-all duration-300 bg-brand-bg/95 text-brand-dark px-3.5 py-2 rounded-full shadow-lg flex items-center gap-1.5 text-xs font-medium tracking-wider">
+                    <svg class="w-3.5 h-3.5 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                    </svg>
+                    Ampliar
+                  </span>
+                </div>
+                <img
+                  src="images/galeria/foto-43.webp?v=5"
+                  alt="Fotografía 43 de Ataurique y Organza — Mis inseparables compañeros han formado parte de mi familia y me han acompañado en los mejores momentos y en los más tristes. En la imagen, mi querido Max."
+                  width="960"
+                  height="1200"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-auto block transform group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                />
+              </div>
+              <figcaption class="p-4 sm:p-5 space-y-1.5 border-t border-brand-primary/10">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-serif text-xs font-bold tracking-widest uppercase text-brand-primary">
+                    Fotografía 43
+                  </span>
+                  
+                </div>
+                <p class="text-brand-dark/85 text-xs sm:text-[13px] leading-relaxed font-normal">
+                  Mis inseparables compañeros han formado parte de mi familia y me han acompañado en los mejores momentos y en los más tristes. En la imagen, mi querido Max.
+                </p>
+              </figcaption>
+            </div>
+          </figure>
+          <!-- Fotografía 44 -->
+          <figure
+            class="gallery-item group cursor-pointer"
+            data-index="43"
+            data-src="images/galeria/foto-44.webp?v=5"
+            data-number="44"
+            data-orientation="vertical"
+            data-caption="Mis inseparables compañeros han formado parte de mi familia y me han acompañado en los mejores momentos y en los más tristes. En la imagen, mi pequeña Triana."
+            tabindex="0"
+            role="button"
+            aria-label="Ampliar fotografía 44: Mis inseparables compañeros han formado parte de mi familia y me han acompañado en los mejores momentos y en los más tristes. En la imagen, mi pequeña Triana."
+          >
+            <div class="gallery-card bg-white/80 backdrop-blur-sm border border-brand-primary/15 rounded-sm overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-primary/35 transition-all duration-500">
+              <div class="relative w-full overflow-hidden">
+                <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-brand-dark/80 backdrop-blur-md text-brand-bg font-serif text-xs tracking-widest rounded-xs shadow-sm">
+                  44
+                </span>
+                <div class="absolute inset-0 bg-brand-dark/0 group-hover:bg-brand-dark/15 transition-colors duration-500 z-[5] flex items-center justify-center">
+                  <span class="opacity-0 group-hover:opacity-100 transform scale-90 group-hover:scale-100 transition-all duration-300 bg-brand-bg/95 text-brand-dark px-3.5 py-2 rounded-full shadow-lg flex items-center gap-1.5 text-xs font-medium tracking-wider">
+                    <svg class="w-3.5 h-3.5 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                    </svg>
+                    Ampliar
+                  </span>
+                </div>
+                <img
+                  src="images/galeria/foto-44.webp?v=5"
+                  alt="Fotografía 44 de Ataurique y Organza — Mis inseparables compañeros han formado parte de mi familia y me han acompañado en los mejores momentos y en los más tristes. En la imagen, mi pequeña Triana."
+                  width="957"
+                  height="1200"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-auto block transform group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                />
+              </div>
+              <figcaption class="p-4 sm:p-5 space-y-1.5 border-t border-brand-primary/10">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-serif text-xs font-bold tracking-widest uppercase text-brand-primary">
+                    Fotografía 44
+                  </span>
+                  
+                </div>
+                <p class="text-brand-dark/85 text-xs sm:text-[13px] leading-relaxed font-normal">
+                  Mis inseparables compañeros han formado parte de mi familia y me han acompañado en los mejores momentos y en los más tristes. En la imagen, mi pequeña Triana.
+                </p>
+              </figcaption>
+            </div>
+          </figure>
+          <!-- Fotografía 45 -->
+          <figure
+            class="gallery-item group cursor-pointer"
+            data-index="44"
+            data-src="images/galeria/foto-45.webp?v=5"
+            data-number="45"
+            data-orientation="vertical"
+            data-caption="Paseando por el pueblo de mis padres, Maguilla, acompañado por Max."
+            tabindex="0"
+            role="button"
+            aria-label="Ampliar fotografía 45: Paseando por el pueblo de mis padres, Maguilla, acompañado por Max."
+          >
+            <div class="gallery-card bg-white/80 backdrop-blur-sm border border-brand-primary/15 rounded-sm overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-primary/35 transition-all duration-500">
+              <div class="relative w-full overflow-hidden">
+                <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-brand-dark/80 backdrop-blur-md text-brand-bg font-serif text-xs tracking-widest rounded-xs shadow-sm">
+                  45
+                </span>
+                <div class="absolute inset-0 bg-brand-dark/0 group-hover:bg-brand-dark/15 transition-colors duration-500 z-[5] flex items-center justify-center">
+                  <span class="opacity-0 group-hover:opacity-100 transform scale-90 group-hover:scale-100 transition-all duration-300 bg-brand-bg/95 text-brand-dark px-3.5 py-2 rounded-full shadow-lg flex items-center gap-1.5 text-xs font-medium tracking-wider">
+                    <svg class="w-3.5 h-3.5 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                    </svg>
+                    Ampliar
+                  </span>
+                </div>
+                <img
+                  src="images/galeria/foto-45.webp?v=5"
+                  alt="Fotografía 45 de Ataurique y Organza — Paseando por el pueblo de mis padres, Maguilla, acompañado por Max."
+                  width="901"
+                  height="1200"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-auto block transform group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                />
+              </div>
+              <figcaption class="p-4 sm:p-5 space-y-1.5 border-t border-brand-primary/10">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-serif text-xs font-bold tracking-widest uppercase text-brand-primary">
+                    Fotografía 45
+                  </span>
+                  
+                </div>
+                <p class="text-brand-dark/85 text-xs sm:text-[13px] leading-relaxed font-normal">
+                  Paseando por el pueblo de mis padres, Maguilla, acompañado por Max.
+                </p>
+              </figcaption>
+            </div>
+          </figure>
+          <!-- Fotografía 46 -->
+          <figure
+            class="gallery-item group cursor-pointer"
+            data-index="45"
+            data-src="images/galeria/foto-46.webp?v=5"
+            data-number="46"
+            data-orientation="vertical"
+            data-caption="Firmando el acta de nombramiento de hijo adoptivo de la Villa de Maguilla en 1996, uno de los días más importantes de mi vida."
+            tabindex="0"
+            role="button"
+            aria-label="Ampliar fotografía 46: Firmando el acta de nombramiento de hijo adoptivo de la Villa de Maguilla en 1996, uno de los días más importantes de mi vida."
+          >
+            <div class="gallery-card bg-white/80 backdrop-blur-sm border border-brand-primary/15 rounded-sm overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-primary/35 transition-all duration-500">
+              <div class="relative w-full overflow-hidden">
+                <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-brand-dark/80 backdrop-blur-md text-brand-bg font-serif text-xs tracking-widest rounded-xs shadow-sm">
+                  46
+                </span>
+                <div class="absolute inset-0 bg-brand-dark/0 group-hover:bg-brand-dark/15 transition-colors duration-500 z-[5] flex items-center justify-center">
+                  <span class="opacity-0 group-hover:opacity-100 transform scale-90 group-hover:scale-100 transition-all duration-300 bg-brand-bg/95 text-brand-dark px-3.5 py-2 rounded-full shadow-lg flex items-center gap-1.5 text-xs font-medium tracking-wider">
+                    <svg class="w-3.5 h-3.5 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                    </svg>
+                    Ampliar
+                  </span>
+                </div>
+                <img
+                  src="images/galeria/foto-46.webp?v=5"
+                  alt="Fotografía 46 de Ataurique y Organza — Firmando el acta de nombramiento de hijo adoptivo de la Villa de Maguilla en 1996, uno de los días más importantes de mi vida."
+                  width="977"
+                  height="1200"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-auto block transform group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                />
+              </div>
+              <figcaption class="p-4 sm:p-5 space-y-1.5 border-t border-brand-primary/10">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-serif text-xs font-bold tracking-widest uppercase text-brand-primary">
+                    Fotografía 46
+                  </span>
+                  
+                </div>
+                <p class="text-brand-dark/85 text-xs sm:text-[13px] leading-relaxed font-normal">
+                  Firmando el acta de nombramiento de hijo adoptivo de la Villa de Maguilla en 1996, uno de los días más importantes de mi vida.
+                </p>
+              </figcaption>
+            </div>
+          </figure>
+          <!-- Fotografía 47 -->
+          <figure
+            class="gallery-item group cursor-pointer"
+            data-index="46"
+            data-src="images/galeria/foto-47.webp?v=5"
+            data-number="47"
+            data-orientation="horizontal"
+            data-caption="Imagen del día que recibí la Medalla de Oro de la Ciudad de Sevilla a mi trayectoria profesional en 2011. Siempre estaré agradecido a la tierra que me vio nacer por haberme inspirado desde antes de enhebrar una aguja por primera vez."
+            tabindex="0"
+            role="button"
+            aria-label="Ampliar fotografía 47: Imagen del día que recibí la Medalla de Oro de la Ciudad de Sevilla a mi trayectoria profesional en 2011. Siempre estaré agradecido a la tierra que me vio nacer por haberme inspirado desde antes de enhebrar una aguja por primera vez."
+          >
+            <div class="gallery-card bg-white/80 backdrop-blur-sm border border-brand-primary/15 rounded-sm overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-primary/35 transition-all duration-500">
+              <div class="relative w-full overflow-hidden">
+                <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-brand-dark/80 backdrop-blur-md text-brand-bg font-serif text-xs tracking-widest rounded-xs shadow-sm">
+                  47
+                </span>
+                <div class="absolute inset-0 bg-brand-dark/0 group-hover:bg-brand-dark/15 transition-colors duration-500 z-[5] flex items-center justify-center">
+                  <span class="opacity-0 group-hover:opacity-100 transform scale-90 group-hover:scale-100 transition-all duration-300 bg-brand-bg/95 text-brand-dark px-3.5 py-2 rounded-full shadow-lg flex items-center gap-1.5 text-xs font-medium tracking-wider">
+                    <svg class="w-3.5 h-3.5 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                    </svg>
+                    Ampliar
+                  </span>
+                </div>
+                <img
+                  src="images/galeria/foto-47.webp?v=5"
+                  alt="Fotografía 47 de Ataurique y Organza — Imagen del día que recibí la Medalla de Oro de la Ciudad de Sevilla a mi trayectoria profesional en 2011. Siempre estaré agradecido a la tierra que me vio nacer por haberme inspirado desde antes de enhebrar una aguja por primera vez."
+                  width="1600"
+                  height="1022"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-auto block transform group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                />
+              </div>
+              <figcaption class="p-4 sm:p-5 space-y-1.5 border-t border-brand-primary/10">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-serif text-xs font-bold tracking-widest uppercase text-brand-primary">
+                    Fotografía 47
+                  </span>
+                  
+                </div>
+                <p class="text-brand-dark/85 text-xs sm:text-[13px] leading-relaxed font-normal">
+                  Imagen del día que recibí la Medalla de Oro de la Ciudad de Sevilla a mi trayectoria profesional en 2011. Siempre estaré agradecido a la tierra que me vio nacer por haberme inspirado desde antes de enhebrar una aguja por primera vez.
+                </p>
+              </figcaption>
+            </div>
+          </figure>
+          <!-- Fotografía 48 -->
+          <figure
+            class="gallery-item group cursor-pointer"
+            data-index="47"
+            data-src="images/galeria/foto-48.webp?v=5"
+            data-number="48"
+            data-orientation="vertical"
+            data-caption="Con la autora el día de su bautizo, en el que lució un faldón de cristianar confeccionado por mí —en la imagen sale muy tranquilita, pero durante las pruebas no había quien la mantuviera quieta—."
+            tabindex="0"
+            role="button"
+            aria-label="Ampliar fotografía 48: Con la autora el día de su bautizo, en el que lució un faldón de cristianar confeccionado por mí —en la imagen sale muy tranquilita, pero durante las pruebas no había quien la mantuviera quieta—."
+          >
+            <div class="gallery-card bg-white/80 backdrop-blur-sm border border-brand-primary/15 rounded-sm overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-primary/35 transition-all duration-500">
+              <div class="relative w-full overflow-hidden">
+                <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-brand-dark/80 backdrop-blur-md text-brand-bg font-serif text-xs tracking-widest rounded-xs shadow-sm">
+                  48
+                </span>
+                <div class="absolute inset-0 bg-brand-dark/0 group-hover:bg-brand-dark/15 transition-colors duration-500 z-[5] flex items-center justify-center">
+                  <span class="opacity-0 group-hover:opacity-100 transform scale-90 group-hover:scale-100 transition-all duration-300 bg-brand-bg/95 text-brand-dark px-3.5 py-2 rounded-full shadow-lg flex items-center gap-1.5 text-xs font-medium tracking-wider">
+                    <svg class="w-3.5 h-3.5 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                    </svg>
+                    Ampliar
+                  </span>
+                </div>
+                <img
+                  src="images/galeria/foto-48.webp?v=5"
+                  alt="Fotografía 48 de Ataurique y Organza — Con la autora el día de su bautizo, en el que lució un faldón de cristianar confeccionado por mí —en la imagen sale muy tranquilita, pero durante las pruebas no había quien la mantuviera quieta—."
+                  width="830"
+                  height="1200"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-auto block transform group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                />
+              </div>
+              <figcaption class="p-4 sm:p-5 space-y-1.5 border-t border-brand-primary/10">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-serif text-xs font-bold tracking-widest uppercase text-brand-primary">
+                    Fotografía 48
+                  </span>
+                  
+                </div>
+                <p class="text-brand-dark/85 text-xs sm:text-[13px] leading-relaxed font-normal">
+                  Con la autora el día de su bautizo, en el que lució un faldón de cristianar confeccionado por mí —en la imagen sale muy tranquilita, pero durante las pruebas no había quien la mantuviera quieta—.
+                </p>
+              </figcaption>
+            </div>
+          </figure>
+          <!-- Fotografía 49 -->
+          <figure
+            class="gallery-item group cursor-pointer"
+            data-index="48"
+            data-src="images/galeria/foto-49.webp?v=5"
+            data-number="49"
+            data-orientation="vertical"
+            data-caption="La moda y la costura han sido una forma de vida para mí; la única posible desde que manifesté a mis padres aquel «quiero ser modisto», que fue el comienzo de quien verdaderamente quería ser. Y fui. Sueños cumplidos, diseños que permanecerán en el recuerdo de muchas personas y la certeza de que viviré hasta el final con la aguja en la mano."
+            tabindex="0"
+            role="button"
+            aria-label="Ampliar fotografía 49: La moda y la costura han sido una forma de vida para mí; la única posible desde que manifesté a mis padres aquel «quiero ser modisto», que fue el comienzo de quien verdaderamente quería ser. Y fui. Sueños cumplidos, diseños que permanecerán en el recuerdo de muchas personas y la certeza de que viviré hasta el final con la aguja en la mano."
+          >
+            <div class="gallery-card bg-white/80 backdrop-blur-sm border border-brand-primary/15 rounded-sm overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-primary/35 transition-all duration-500">
+              <div class="relative w-full overflow-hidden">
+                <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-brand-dark/80 backdrop-blur-md text-brand-bg font-serif text-xs tracking-widest rounded-xs shadow-sm">
+                  49
+                </span>
+                <div class="absolute inset-0 bg-brand-dark/0 group-hover:bg-brand-dark/15 transition-colors duration-500 z-[5] flex items-center justify-center">
+                  <span class="opacity-0 group-hover:opacity-100 transform scale-90 group-hover:scale-100 transition-all duration-300 bg-brand-bg/95 text-brand-dark px-3.5 py-2 rounded-full shadow-lg flex items-center gap-1.5 text-xs font-medium tracking-wider">
+                    <svg class="w-3.5 h-3.5 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                    </svg>
+                    Ampliar
+                  </span>
+                </div>
+                <img
+                  src="images/galeria/foto-49.webp?v=5"
+                  alt="Fotografía 49 de Ataurique y Organza — La moda y la costura han sido una forma de vida para mí; la única posible desde que manifesté a mis padres aquel «quiero ser modisto», que fue el comienzo de quien verdaderamente quería ser. Y fui. Sueños cumplidos, diseños que permanecerán en el recuerdo de muchas personas y la certeza de que viviré hasta el final con la aguja en la mano."
+                  width="900"
+                  height="1200"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-auto block transform group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                />
+              </div>
+              <figcaption class="p-4 sm:p-5 space-y-1.5 border-t border-brand-primary/10">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-serif text-xs font-bold tracking-widest uppercase text-brand-primary">
+                    Fotografía 49
+                  </span>
+                  <span class="text-[10px] tracking-widest uppercase text-brand-primary/70 font-medium">Epílogo · I</span>
+                </div>
+                <p class="text-brand-dark/85 text-xs sm:text-[13px] leading-relaxed font-normal">
+                  La moda y la costura han sido una forma de vida para mí; la única posible desde que manifesté a mis padres aquel «quiero ser modisto», que fue el comienzo de quien verdaderamente quería ser. Y fui. Sueños cumplidos, diseños que permanecerán en el recuerdo de muchas personas y la certeza de que viviré hasta el final con la aguja en la mano.
+                </p>
+              </figcaption>
+            </div>
+          </figure>
+          <!-- Fotografía 50 -->
+          <figure
+            class="gallery-item group cursor-pointer"
+            data-index="49"
+            data-src="images/galeria/foto-50.webp?v=5"
+            data-number="50"
+            data-orientation="horizontal"
+            data-caption="La moda y la costura han sido una forma de vida para mí; la única posible desde que manifesté a mis padres aquel «quiero ser modisto», que fue el comienzo de quien verdaderamente quería ser. Y fui. Sueños cumplidos, diseños que permanecerán en el recuerdo de muchas personas y la certeza de que viviré hasta el final con la aguja en la mano."
+            tabindex="0"
+            role="button"
+            aria-label="Ampliar fotografía 50: La moda y la costura han sido una forma de vida para mí; la única posible desde que manifesté a mis padres aquel «quiero ser modisto», que fue el comienzo de quien verdaderamente quería ser. Y fui. Sueños cumplidos, diseños que permanecerán en el recuerdo de muchas personas y la certeza de que viviré hasta el final con la aguja en la mano."
+          >
+            <div class="gallery-card bg-white/80 backdrop-blur-sm border border-brand-primary/15 rounded-sm overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-primary/35 transition-all duration-500">
+              <div class="relative w-full overflow-hidden">
+                <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-brand-dark/80 backdrop-blur-md text-brand-bg font-serif text-xs tracking-widest rounded-xs shadow-sm">
+                  50
+                </span>
+                <div class="absolute inset-0 bg-brand-dark/0 group-hover:bg-brand-dark/15 transition-colors duration-500 z-[5] flex items-center justify-center">
+                  <span class="opacity-0 group-hover:opacity-100 transform scale-90 group-hover:scale-100 transition-all duration-300 bg-brand-bg/95 text-brand-dark px-3.5 py-2 rounded-full shadow-lg flex items-center gap-1.5 text-xs font-medium tracking-wider">
+                    <svg class="w-3.5 h-3.5 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                    </svg>
+                    Ampliar
+                  </span>
+                </div>
+                <img
+                  src="images/galeria/foto-50.webp?v=5"
+                  alt="Fotografía 50 de Ataurique y Organza — La moda y la costura han sido una forma de vida para mí; la única posible desde que manifesté a mis padres aquel «quiero ser modisto», que fue el comienzo de quien verdaderamente quería ser. Y fui. Sueños cumplidos, diseños que permanecerán en el recuerdo de muchas personas y la certeza de que viviré hasta el final con la aguja en la mano."
+                  width="1600"
+                  height="1572"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-auto block transform group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                />
+              </div>
+              <figcaption class="p-4 sm:p-5 space-y-1.5 border-t border-brand-primary/10">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-serif text-xs font-bold tracking-widest uppercase text-brand-primary">
+                    Fotografía 50
+                  </span>
+                  <span class="text-[10px] tracking-widest uppercase text-brand-primary/70 font-medium">Epílogo · II</span>
+                </div>
+                <p class="text-brand-dark/85 text-xs sm:text-[13px] leading-relaxed font-normal">
+                  La moda y la costura han sido una forma de vida para mí; la única posible desde que manifesté a mis padres aquel «quiero ser modisto», que fue el comienzo de quien verdaderamente quería ser. Y fui. Sueños cumplidos, diseños que permanecerán en el recuerdo de muchas personas y la certeza de que viviré hasta el final con la aguja en la mano.
+                </p>
+              </figcaption>
+            </div>
+          </figure>
+          <!-- Fotografía 51 -->
+          <figure
+            class="gallery-item group cursor-pointer"
+            data-index="50"
+            data-src="images/galeria/foto-51.webp?v=5"
+            data-number="51"
+            data-orientation="horizontal"
+            data-caption="La moda y la costura han sido una forma de vida para mí; la única posible desde que manifesté a mis padres aquel «quiero ser modisto», que fue el comienzo de quien verdaderamente quería ser. Y fui. Sueños cumplidos, diseños que permanecerán en el recuerdo de muchas personas y la certeza de que viviré hasta el final con la aguja en la mano."
+            tabindex="0"
+            role="button"
+            aria-label="Ampliar fotografía 51: La moda y la costura han sido una forma de vida para mí; la única posible desde que manifesté a mis padres aquel «quiero ser modisto», que fue el comienzo de quien verdaderamente quería ser. Y fui. Sueños cumplidos, diseños que permanecerán en el recuerdo de muchas personas y la certeza de que viviré hasta el final con la aguja en la mano."
+          >
+            <div class="gallery-card bg-white/80 backdrop-blur-sm border border-brand-primary/15 rounded-sm overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-primary/35 transition-all duration-500">
+              <div class="relative w-full overflow-hidden">
+                <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-brand-dark/80 backdrop-blur-md text-brand-bg font-serif text-xs tracking-widest rounded-xs shadow-sm">
+                  51
+                </span>
+                <div class="absolute inset-0 bg-brand-dark/0 group-hover:bg-brand-dark/15 transition-colors duration-500 z-[5] flex items-center justify-center">
+                  <span class="opacity-0 group-hover:opacity-100 transform scale-90 group-hover:scale-100 transition-all duration-300 bg-brand-bg/95 text-brand-dark px-3.5 py-2 rounded-full shadow-lg flex items-center gap-1.5 text-xs font-medium tracking-wider">
+                    <svg class="w-3.5 h-3.5 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                    </svg>
+                    Ampliar
+                  </span>
+                </div>
+                <img
+                  src="images/galeria/foto-51.webp?v=5"
+                  alt="Fotografía 51 de Ataurique y Organza — La moda y la costura han sido una forma de vida para mí; la única posible desde que manifesté a mis padres aquel «quiero ser modisto», que fue el comienzo de quien verdaderamente quería ser. Y fui. Sueños cumplidos, diseños que permanecerán en el recuerdo de muchas personas y la certeza de que viviré hasta el final con la aguja en la mano."
+                  width="1600"
+                  height="1596"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-auto block transform group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                />
+              </div>
+              <figcaption class="p-4 sm:p-5 space-y-1.5 border-t border-brand-primary/10">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-serif text-xs font-bold tracking-widest uppercase text-brand-primary">
+                    Fotografía 51
+                  </span>
+                  <span class="text-[10px] tracking-widest uppercase text-brand-primary/70 font-medium">Epílogo · III</span>
+                </div>
+                <p class="text-brand-dark/85 text-xs sm:text-[13px] leading-relaxed font-normal">
+                  La moda y la costura han sido una forma de vida para mí; la única posible desde que manifesté a mis padres aquel «quiero ser modisto», que fue el comienzo de quien verdaderamente quería ser. Y fui. Sueños cumplidos, diseños que permanecerán en el recuerdo de muchas personas y la certeza de que viviré hasta el final con la aguja en la mano.
+                </p>
+              </figcaption>
+            </div>
+          </figure>
+          <!-- Fotografía 52 -->
+          <figure
+            class="gallery-item group cursor-pointer"
+            data-index="51"
+            data-src="images/galeria/foto-52.webp?v=5"
+            data-number="52"
+            data-orientation="vertical"
+            data-caption="La moda y la costura han sido una forma de vida para mí; la única posible desde que manifesté a mis padres aquel «quiero ser modisto», que fue el comienzo de quien verdaderamente quería ser. Y fui. Sueños cumplidos, diseños que permanecerán en el recuerdo de muchas personas y la certeza de que viviré hasta el final con la aguja en la mano."
+            tabindex="0"
+            role="button"
+            aria-label="Ampliar fotografía 52: La moda y la costura han sido una forma de vida para mí; la única posible desde que manifesté a mis padres aquel «quiero ser modisto», que fue el comienzo de quien verdaderamente quería ser. Y fui. Sueños cumplidos, diseños que permanecerán en el recuerdo de muchas personas y la certeza de que viviré hasta el final con la aguja en la mano."
+          >
+            <div class="gallery-card bg-white/80 backdrop-blur-sm border border-brand-primary/15 rounded-sm overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-primary/35 transition-all duration-500">
+              <div class="relative w-full overflow-hidden">
+                <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-brand-dark/80 backdrop-blur-md text-brand-bg font-serif text-xs tracking-widest rounded-xs shadow-sm">
+                  52
+                </span>
+                <div class="absolute inset-0 bg-brand-dark/0 group-hover:bg-brand-dark/15 transition-colors duration-500 z-[5] flex items-center justify-center">
+                  <span class="opacity-0 group-hover:opacity-100 transform scale-90 group-hover:scale-100 transition-all duration-300 bg-brand-bg/95 text-brand-dark px-3.5 py-2 rounded-full shadow-lg flex items-center gap-1.5 text-xs font-medium tracking-wider">
+                    <svg class="w-3.5 h-3.5 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                    </svg>
+                    Ampliar
+                  </span>
+                </div>
+                <img
+                  src="images/galeria/foto-52.webp?v=5"
+                  alt="Fotografía 52 de Ataurique y Organza — La moda y la costura han sido una forma de vida para mí; la única posible desde que manifesté a mis padres aquel «quiero ser modisto», que fue el comienzo de quien verdaderamente quería ser. Y fui. Sueños cumplidos, diseños que permanecerán en el recuerdo de muchas personas y la certeza de que viviré hasta el final con la aguja en la mano."
+                  width="1029"
+                  height="1200"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-auto block transform group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                />
+              </div>
+              <figcaption class="p-4 sm:p-5 space-y-1.5 border-t border-brand-primary/10">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-serif text-xs font-bold tracking-widest uppercase text-brand-primary">
+                    Fotografía 52
+                  </span>
+                  <span class="text-[10px] tracking-widest uppercase text-brand-primary/70 font-medium">Epílogo · IV</span>
+                </div>
+                <p class="text-brand-dark/85 text-xs sm:text-[13px] leading-relaxed font-normal">
+                  La moda y la costura han sido una forma de vida para mí; la única posible desde que manifesté a mis padres aquel «quiero ser modisto», que fue el comienzo de quien verdaderamente quería ser. Y fui. Sueños cumplidos, diseños que permanecerán en el recuerdo de muchas personas y la certeza de que viviré hasta el final con la aguja en la mano.
+                </p>
+              </figcaption>
+            </div>
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <!-- Visor Modal Ligero (Lightbox en Vanilla JS) -->
+    <div
+      id="lightbox-modal"
+      class="fixed inset-0 z-50 bg-[#1a110e]/95 backdrop-blur-md flex flex-col justify-between p-3 sm:p-6 select-none overflow-y-auto"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Visor de fotografías a pantalla completa"
+      aria-hidden="true"
+    >
+      <!-- Barra superior del visor -->
+      <div class="w-full max-w-6xl mx-auto flex items-center justify-between text-[#faf6f0] z-20 shrink-0">
+        <div class="flex items-center gap-3">
+          <span
+            id="lightbox-counter"
+            class="font-serif text-sm sm:text-base tracking-widest uppercase text-[#e8d8ce] font-semibold px-3 py-1 rounded-sm bg-white/10 border border-white/10"
+          >
+            01 / 52
+          </span>
+          <span class="text-xs tracking-wider text-[#e8d8ce]/75 hidden sm:inline">
+            Ataurique y Organza · Archivo Fotográfico
+          </span>
+        </div>
+
+        <button
+          id="lightbox-close"
+          type="button"
+          class="p-2 sm:p-2.5 rounded-full bg-white/10 hover:bg-white/25 text-[#faf6f0] transition-colors cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#e8d8ce]"
+          aria-label="Cerrar visor (Escape)"
+        >
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Área central: Imagen + Descripción integrada justo debajo -->
+      <div
+        id="lightbox-stage"
+        class="relative flex-1 min-h-0 flex flex-col items-center justify-center w-full max-w-6xl mx-auto my-2 gap-3 sm:gap-4"
+      >
+        <!-- Botón Anterior -->
+        <button
+          id="lightbox-prev"
+          type="button"
+          class="fixed sm:absolute left-2 sm:left-3 top-1/2 -translate-y-1/2 z-30 p-3 sm:p-3.5 rounded-full bg-black/60 hover:bg-black/85 text-[#faf6f0] border border-white/20 transition-all cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#e8d8ce] shadow-lg"
+          aria-label="Fotografía anterior"
+        >
+          <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+
+        <!-- Imagen activa -->
+        <div class="min-h-0 flex items-center justify-center px-10 sm:px-16">
+          <img
+            id="lightbox-img"
+            src=""
+            alt=""
+            decoding="async"
+            class="h-[52vh] sm:h-[62vh] max-w-[85vw] sm:max-w-[75vw] w-auto object-contain rounded-xs shadow-2xl"
+          />
+        </div>
+
+        <!-- Descripción / Pie de foto justo debajo de la imagen -->
+        <div
+          id="lightbox-caption-box"
+          class="w-full max-w-3xl mx-auto px-2 sm:px-8 shrink-0 z-20"
+        >
+          <div class="bg-[#faf6f0] text-[#2a1c18] border border-[#e8d8ce] rounded-sm px-4 py-3 sm:px-6 sm:py-4 shadow-xl text-center">
+            <span
+              id="lightbox-caption-title"
+              class="block font-serif text-xs sm:text-sm font-bold tracking-widest uppercase text-[#70534c] mb-1"
+            >
+              Fotografía 01
+            </span>
+            <p
+              id="lightbox-caption"
+              class="text-[#2a1c18] text-xs sm:text-sm md:text-[15px] leading-relaxed font-normal"
+            ></p>
+          </div>
+          <p class="text-[11px] text-[#e8d8ce]/60 mt-1.5 text-center sm:hidden">
+            Desliza a izquierda o derecha para cambiar de foto
+          </p>
+        </div>
+
+        <!-- Botón Siguiente -->
+        <button
+          id="lightbox-next"
+          type="button"
+          class="fixed sm:absolute right-2 sm:right-3 top-1/2 -translate-y-1/2 z-30 p-3 sm:p-3.5 rounded-full bg-black/60 hover:bg-black/85 text-[#faf6f0] border border-white/20 transition-all cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#e8d8ce] shadow-lg"
+          aria-label="Fotografía siguiente"
+        >
+          <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Espaciador inferior -->
+      <div class="h-1 shrink-0"></div>
+    </div>
+
+    <!-- Pie de página sobrio -->
+    <footer
+      class="bg-brand-dark text-brand-accent-light/85 py-10 border-t border-brand-primary/10"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-6"
+      >
+        <div class="flex items-center space-x-3">
+          <img
+            src="images/logo mariposa.png"
+            alt=""
+            role="presentation"
+            data-nosnippet
+            class="h-9 w-auto opacity-90"
+          />
+          <div>
+            <span
+              class="font-serif text-base tracking-widest text-brand-bg font-semibold block"
+            >
+              TRIANA DE LOS REYES
+            </span>
+            <span class="text-[11px] text-brand-accent-light/60">
+              &copy; 2026 Triana de los Reyes · Todos los derechos reservados
+            </span>
+          </div>
+        </div>
+
+        <a
+          href="/"
+          class="text-xs tracking-widest uppercase text-brand-accent hover:text-brand-bg transition-colors"
+        >
+          ← Volver a trianadelosreyes.com
+        </a>
+      </div>
+    </footer>
+
+    <!-- Lógica en Vanilla JS: Masonry responsivo, Lightbox táctil y protección de imágenes -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const grid = document.getElementById('gallery-grid');
+        const items = Array.from(document.querySelectorAll('.gallery-item'));
+
+        // --- 1. MASONRY CRONOLÓGICO EN GRID ---
+        function layoutMasonry() {
+          if (!grid) return;
+          if (window.innerWidth < 640) {
+            grid.classList.remove('masonry-ready');
+            items.forEach((item) => {
+              item.style.gridRowEnd = '';
+            });
+            return;
+          }
+
+          grid.classList.add('masonry-ready');
+          const rowHeight = 8;
+          items.forEach((item) => {
+            const card = item.querySelector('.gallery-card');
+            if (!card) return;
+            const totalHeight = card.getBoundingClientRect().height + 24;
+            const rowSpan = Math.ceil(totalHeight / rowHeight);
+            item.style.gridRowEnd = `span ${rowSpan}`;
+          });
+        }
+
+        layoutMasonry();
+        window.addEventListener('resize', () => {
+          window.requestAnimationFrame(layoutMasonry);
+        });
+
+        if ('ResizeObserver' in window) {
+          const ro = new ResizeObserver(() => {
+            window.requestAnimationFrame(layoutMasonry);
+          });
+          items.forEach((item) => {
+            const card = item.querySelector('.gallery-card');
+            if (card) ro.observe(card);
+          });
+        }
+
+        // --- 2. VISOR MODAL LIGERO (LIGHTBOX) ---
+        const modal = document.getElementById('lightbox-modal');
+        const modalImg = document.getElementById('lightbox-img');
+        const modalCounter = document.getElementById('lightbox-counter');
+        const modalCaptionTitle = document.getElementById('lightbox-caption-title');
+        const modalCaption = document.getElementById('lightbox-caption');
+        const btnClose = document.getElementById('lightbox-close');
+        const btnPrev = document.getElementById('lightbox-prev');
+        const btnNext = document.getElementById('lightbox-next');
+        const stage = document.getElementById('lightbox-stage');
+
+        let currentIndex = 0;
+        let isOpen = false;
+        let lastFocusedElement = null;
+
+        function preloadImage(index) {
+          if (index < 0 || index >= items.length) return;
+          const src = items[index].dataset.src;
+          if (src) {
+            const img = new Image();
+            img.src = src;
+          }
+        }
+
+        function updateLightbox(index) {
+          currentIndex = (index + items.length) % items.length;
+          const item = items[currentIndex];
+          const src = item.dataset.src;
+          const num = item.dataset.number;
+          const caption = item.dataset.caption;
+          const orientation = item.dataset.orientation;
+
+          if (orientation === 'vertical') {
+            modalImg.className = 'h-[52vh] sm:h-[62vh] w-auto max-w-[85vw] object-contain rounded-xs shadow-2xl';
+          } else {
+            modalImg.className = 'w-[85vw] sm:w-[65vw] max-w-[920px] h-auto max-h-[58vh] object-contain rounded-xs shadow-2xl';
+          }
+
+          modalImg.style.opacity = '0.35';
+          modalImg.src = src;
+          modalImg.alt = `Fotografía ${num} — ${caption}`;
+          modalImg.onload = () => {
+            modalImg.style.opacity = '1';
+          };
+
+          modalCounter.textContent = `${num} / ${items.length}`;
+          if (modalCaptionTitle) {
+            modalCaptionTitle.textContent = `Fotografía ${num}`;
+          }
+          modalCaption.textContent = caption;
+
+          // Precargar anterior y siguiente para deslizamiento instantáneo
+          preloadImage((currentIndex + 1) % items.length);
+          preloadImage((currentIndex - 1 + items.length) % items.length);
+        }
+
+        function openLightbox(index) {
+          lastFocusedElement = document.activeElement;
+          updateLightbox(index);
+          isOpen = true;
+          modal.classList.add('is-open');
+          modal.setAttribute('aria-hidden', 'false');
+          document.body.style.overflow = 'hidden';
+          btnClose.focus();
+        }
+
+        function closeLightbox() {
+          if (!isOpen) return;
+          isOpen = false;
+          modal.classList.remove('is-open');
+          modal.setAttribute('aria-hidden', 'true');
+          document.body.style.overflow = '';
+          if (lastFocusedElement && typeof lastFocusedElement.focus === 'function') {
+            lastFocusedElement.focus();
+          }
+        }
+
+        function showPrev(e) {
+          if (e) e.stopPropagation();
+          updateLightbox(currentIndex - 1);
+        }
+
+        function showNext(e) {
+          if (e) e.stopPropagation();
+          updateLightbox(currentIndex + 1);
+        }
+
+        items.forEach((item, idx) => {
+          item.addEventListener('click', () => openLightbox(idx));
+          item.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              openLightbox(idx);
+            }
+          });
+        });
+
+        btnClose.addEventListener('click', closeLightbox);
+        btnPrev.addEventListener('click', showPrev);
+        btnNext.addEventListener('click', showNext);
+
+        // Cerrar al pulsar sobre el fondo oscuro fuera de la imagen o controles
+        modal.addEventListener('click', (e) => {
+          if (e.target === modal || e.target === stage) {
+            closeLightbox();
+          }
+        });
+
+        // Navegación por teclado
+        document.addEventListener('keydown', (e) => {
+          if (!isOpen) return;
+          if (e.key === 'Escape') {
+            closeLightbox();
+          } else if (e.key === 'ArrowLeft') {
+            showPrev();
+          } else if (e.key === 'ArrowRight') {
+            showNext();
+          }
+        });
+
+        // Soporte táctil (Swipe horizontal para cambiar de foto, vertical hacia abajo para cerrar)
+        let touchStartX = 0;
+        let touchStartY = 0;
+
+        modal.addEventListener('touchstart', (e) => {
+          if (!e.touches || e.touches.length !== 1) return;
+          touchStartX = e.touches[0].clientX;
+          touchStartY = e.touches[0].clientY;
+        }, { passive: true });
+
+        modal.addEventListener('touchend', (e) => {
+          if (!e.changedTouches || e.changedTouches.length !== 1) return;
+          const deltaX = e.changedTouches[0].clientX - touchStartX;
+          const deltaY = e.changedTouches[0].clientY - touchStartY;
+
+          if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > 45) {
+            if (deltaX < 0) {
+              showNext();
+            } else {
+              showPrev();
+            }
+          } else if (deltaY > 90 && Math.abs(deltaX) < 60) {
+            closeLightbox();
+          }
+        }, { passive: true });
+
+        // --- 3. PROTECCIÓN DE IMÁGENES (CLIC DERECHO Y ARRASTRE) ---
+        document.addEventListener('contextmenu', (e) => {
+          if (e.target.tagName === 'IMG') {
+            e.preventDefault();
+          }
+        });
+
+        document.addEventListener('dragstart', (e) => {
+          if (e.target.tagName === 'IMG') {
+            e.preventDefault();
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
