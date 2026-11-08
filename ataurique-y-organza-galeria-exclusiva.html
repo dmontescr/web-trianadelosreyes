@@ -152,49 +152,66 @@
 
     <!-- Contenido Principal -->
     <main class="flex-grow">
-      <!-- Encabezado Editorial de Bienvenida -->
-      <section class="pt-12 pb-10 sm:pt-16 sm:pb-14 px-6 max-w-4xl mx-auto text-center fade-in-up">
-        <div
-          class="inline-flex items-center space-x-2 bg-brand-accent/35 text-brand-primary px-3.5 py-1 rounded-full text-[11px] font-semibold tracking-widest uppercase mb-5"
-        >
-          <span>✦</span>
-          <span>Contenido Exclusivo · Edición Lector</span>
-          <span>✦</span>
-        </div>
+      <!-- Encabezado Editorial de Bienvenida con Ilustración del Vestido a la Derecha -->
+      <section class="pt-10 pb-10 sm:pt-14 sm:pb-14 px-6 max-w-6xl mx-auto fade-in-up">
+        <div class="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
+          <!-- Columna Izquierda: Título y Nota de Bienvenida -->
+          <div class="flex-1 text-center lg:text-left">
+            <div
+              class="inline-flex items-center space-x-2 bg-brand-accent/35 text-brand-primary px-3.5 py-1 rounded-full text-[11px] font-semibold tracking-widest uppercase mb-4"
+            >
+              <span>✦</span>
+              <span>Contenido Exclusivo · Edición Lector</span>
+              <span>✦</span>
+            </div>
 
-        <h1
-          class="font-serif text-4xl sm:text-5xl md:text-6xl text-brand-primary font-bold italic tracking-wide leading-tight"
-        >
-          Ataurique y Organza
-        </h1>
+            <h1
+              class="font-serif text-4xl sm:text-5xl md:text-6xl text-brand-primary font-bold italic tracking-wide leading-tight"
+            >
+              Ataurique y Organza
+            </h1>
 
-        <p
-          class="font-serif text-lg sm:text-xl text-brand-primary-light tracking-widest uppercase mt-2"
-        >
-          Álbum Documental y Fotográfico
-        </p>
+            <p
+              class="font-serif text-lg sm:text-xl text-brand-primary-light tracking-widest uppercase mt-2"
+            >
+              Álbum Documental y Fotográfico
+            </p>
 
-        <!-- Nota de bienvenida para el lector -->
-        <div
-          class="mt-8 editorial-frame bg-white/75 backdrop-blur-sm rounded-sm p-6 sm:p-8 shadow-sm text-left sm:text-center max-w-3xl mx-auto"
-        >
-          <p
-            class="text-brand-dark/85 text-sm sm:text-base leading-relaxed"
-          >
-            Gracias por cruzar el umbral de <strong><em>Ataurique y Organza</em></strong>.
-            Esta galería privada reúne las <strong>fotografías originales</strong>
-            que acompañan la memoria de la novela, comentadas en primera persona por su protagonista.
-            Desde sus raíces en Sevilla hasta los grandes salones de la alta costura, cada imagen guarda
-            el latido real de las personas, los talleres y los diseños que inspiraron esta historia.
-          </p>
-          <div class="mt-5 pt-4 border-t border-brand-primary/10 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-6 text-xs text-brand-dark/60">
-            <span class="flex items-center gap-1.5">
-              <svg class="w-4 h-4 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-              </svg>
-              Pulsa sobre cualquier fotografía para verla en grande y leer su historia
-            </span>
+            <!-- Nota de bienvenida para el lector -->
+            <div
+              class="mt-6 editorial-frame bg-white/75 backdrop-blur-sm rounded-sm p-6 sm:p-8 shadow-sm text-left"
+            >
+              <p
+                class="text-brand-dark/85 text-sm sm:text-base leading-relaxed"
+              >
+                Gracias por cruzar el umbral de <strong><em>Ataurique y Organza</em></strong>.
+                Esta galería privada reúne las <strong>fotografías originales</strong>
+                que acompañan la memoria de la novela, comentadas en primera persona por su protagonista.
+                Desde sus raíces en Sevilla hasta los grandes salones de la alta costura, cada imagen guarda
+                el latido real de las personas, los talleres y los diseños que inspiraron esta historia.
+              </p>
+              <div class="mt-5 pt-4 border-t border-brand-primary/10 flex flex-col sm:flex-row items-center lg:justify-start justify-center gap-2 sm:gap-6 text-xs text-brand-dark/60">
+                <span class="flex items-center gap-1.5">
+                  <svg class="w-4 h-4 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                  </svg>
+                  Pulsa sobre cualquier fotografía para verla en grande y leer su historia
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Columna Derecha: Ilustración del vestido integrada sin fondo -->
+          <div class="w-60 sm:w-72 lg:w-[340px] shrink-0 flex justify-center lg:justify-end">
+            <img
+              src="images/vestido-ataurique.webp"
+              alt="Boceto de alta costura firmado por Petro Valverde para Ataurique y Organza"
+              width="686"
+              height="720"
+              decoding="async"
+              class="w-full h-auto object-contain select-none pointer-events-none drop-shadow-xs"
+            />
           </div>
         </div>
       </section>
